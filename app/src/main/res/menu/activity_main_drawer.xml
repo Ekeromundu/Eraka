@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Eraka side menu.
+     Group "child": things the child/caregiver use day to day.
+     Group "grownups": opened through the caregiver lock (see CaregiverGate). -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/activity">
+        <item
+            android:id="@+id/ubic"
+            android:icon="@drawable/ic_eraka_place"
+            android:title="@string/menu_places"/>
+        <item
+            android:id="@+id/action_parar"
+            android:icon="@drawable/ic_volume_up_white_24dp"
+            android:title="@string/action_parar"/>
+        <item
+            android:id="@+id/favourite_phrases"
+            android:icon="@drawable/ic_eraka_star"
+            android:title="@string/menu_favourites"/>
+        <item
+            android:id="@+id/games"
+            android:visible="false"
+            android:icon="@drawable/ic_eraka_games"
+            android:title="@string/menu_games"/>
+        <item
+            android:id="@+id/change_avatar"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="@string/menu_change_avatar"/>
+    </group>
+
+    <group android:id="@+id/general">
+        <item
+            android:id="@+id/child_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_child_profile"/>
+        <item
+            android:id="@+id/report"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="@string/menu_progress_report"/>
+        <item
+            android:id="@+id/voice_speech"
+            android:icon="@drawable/ic_volume_up_white_24dp"
+            android:title="@string/menu_voice"/>
+        <item
+            android:id="@+id/teach_word"
+            android:icon="@drawable/ic_mic_black_24dp"
+            android:title="@string/menu_teach_word"/>
+        <item
+            android:id="@+id/speech_check"
+            android:icon="@drawable/ic_record_voice_over_black_24dp"
+            android:title="@string/menu_speech_check"/>
+        <item
+            android:id="@+id/send_data"
+            android:icon="@drawable/ic_eraka_share"
+            android:title="@string/menu_send_data"/>
+        <item
+            android:id="@+id/backup_restore"
+            android:icon="@drawable/ic_eraka_cloud"
+            android:title="@string/menu_backup"/>
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/menu_settings"/>
+    </group>
+
+    <group android:id="@+id/info">
+        <item
+            android:id="@+id/help_tips"
+            android:icon="@drawable/ic_eraka_tips"
+            android:title="@string/menu_help_tips"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="@string/menu_about"/>
+    </group>
+
+    <group android:id="@+id/out">
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/ic_cancel_black_24dp"
+            android:title="@string/system_exit"/>
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/pref_header_cerrar_sesion"/>
+    </group>
+</menu>

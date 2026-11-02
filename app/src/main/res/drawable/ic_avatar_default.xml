@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Eraka 27 Oct 2026: neutral default avatar - a plain person shape without a face, skin colour
+     or gender, shown until the child picks an avatar or a photo. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="96"
+    android:viewportHeight="96">
+    <path android:fillColor="#E4DFD3" android:pathData="M48,0 a48,48 0 1,0 0.01,0 Z"/>
+    <path android:fillColor="#A69F8E" android:pathData="M48,20 a15,15 0 1,0 0.01,0 Z"/>
+    <path android:fillColor="#A69F8E" android:pathData="M18,86 C18,66 30,56 48,56 C66,56 78,66 78,86 C70,92 59,96 48,96 C37,96 26,92 18,86 Z"/>
+</vector>

@@ -1,0 +1,9 @@
+# ninja log v5
+24	382	8050368845548590	CMakeFiles/whisper_jni.dir/ggml-alloc.c.o	dbfb8e5d7b440138
+0	866	8050368850491374	CMakeFiles/whisper_jni.dir/ggml.c.o	d516a92645543e2b
+14	901	8050368850879954	CMakeFiles/whisper_jni.dir/whisper_jni.cpp.o	3d4be660329066eb
+32	957	8050368851468199	CMakeFiles/whisper_jni.dir/ggml-backend.cpp.o	e85ee6898e4211e9
+49	1188	8050368853786666	CMakeFiles/whisper_jni.dir/ggml-cpu.c.o	36ef5c29a7c0c33b
+41	1237	8050368854284674	CMakeFiles/whisper_jni.dir/ggml-quants.c.o	ed0348612129769
+7	4920	8050368890236793	CMakeFiles/whisper_jni.dir/whisper.cpp.o	816b60ad38f685da
+4921	5249	8050368894061456	C:/Users/KEKasaona/Desktop/OTTAAProject - Copy - Copy/app/build/intermediates/cxx/Debug/262t3y1r/obj/x86_64/libwhisper_jni.so	730cbdc2a349e690

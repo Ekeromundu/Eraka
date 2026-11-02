@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Eraka 28 Oct 2026: shown by Android while the board is being built (instead of a black
+     screen): the cream background with the Eraka logo in the middle. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/eraka_cream_bg"/>
+    <item
+        android:width="112dp"
+        android:height="112dp"
+        android:gravity="center"
+        android:drawable="@drawable/ic_launcher_eraka"/>
+</layer-list>

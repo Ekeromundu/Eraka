@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Used only as the background of the ConstraintLayout wrapping the
+  ScrollView inside cardViewOnboarding, together with
+  android:clipToOutline="true" on that same view. It must use the SAME
+  corner radius as app:cardCornerRadius on cardViewOnboarding (36dp) so
+  the scrolling content gets clipped along the exact same curve as the
+  card itself, instead of trailing off in a straight line.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/White" />
+    <corners android:radius="36dp" />
+</shape>

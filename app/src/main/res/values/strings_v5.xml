@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    strings_v5.xml
+    New strings for the v5 layout. Word/category strings are placeholders
+    matching the mockup content - swap for the real, teacher/SLP-reviewed
+    vocabulary set (and Namibian-localized phrasing per Penoo's mom's
+    feedback) before this ships. Left in strings.xml (not hardcoded) for
+    exactly that reason - easy to localize/replace centrally.
+-->
+<resources>
+    <string name="undo_last_word">Undo last word</string>
+    <string name="speak_sentence">Speak sentence</string>
+    <string name="suggested_label">Suggested</string>
+
+    <string name="filler_i_want">I want</string>
+    <string name="filler_more">more</string>
+    <string name="filler_finished">finished</string>
+
+    <string name="category_food">food</string>
+    <string name="category_actions">actions</string>
+    <string name="category_feelings">feelings</string>
+    <string name="category_people">people</string>
+
+    <string name="word_meat">meat</string>
+    <string name="word_fruit">fruit</string>
+    <string name="word_bread">bread</string>
+    <string name="word_drink">drink</string>
+    <string name="word_more">more</string>
+
+    <string name="nav_voice">voice</string>
+    <string name="nav_home">home</string>
+    <string name="nav_favorites">favorites</string>
+    <string name="nav_more">more</string>
+    <string name="nav_more_overflow">More options: share, settings, and link</string>
+</resources>

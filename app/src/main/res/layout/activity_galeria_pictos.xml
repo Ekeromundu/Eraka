@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ARASAAC picture search (GaleriaArasaac) - Eraka style.
+     ids: toolbar, ImageArasaac, TextoArasaac, gridView, tv_invisible (search is the magnifying glass in the toolbar) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eraka_cream_bg"
+    android:orientation="vertical"
+    tools:mContext="na.eraka.GaleriaPictos">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_eraka_toolbar_green"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/White"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_eraka_panel"
+        android:padding="8dp">
+
+        <!-- Shown before the first search -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/ImageArasaac"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:contentDescription="ARASAAC"
+                android:src="@drawable/ic_logo_arasaac_texto"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/TextoArasaac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/toca_la_lupa_para_buscar_en_arasaac"
+                android:textColor="@color/eraka_text_dark"
+                android:textSize="17sp"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:clipToPadding="false"
+            android:columnWidth="140dp"
+            android:drawSelectorOnTop="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:horizontalSpacing="4dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_invisible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"/>
+    </FrameLayout>
+</LinearLayout>

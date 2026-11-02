@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Text for the Eraka side menu and the pages it opens. Edit freely. -->
+<resources>
+    <!-- Menu -->
+    <string name="menu_places">Where are we?</string>
+    <string name="menu_places_current">Where are we? · %1$s</string>
+    <string name="menu_child_profile">Child profile</string>
+    <string name="menu_change_avatar">Change avatar</string>
+    <string name="menu_progress_report">Progress report</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_help_tips">Help &amp; tips</string>
+    <string name="menu_about">About Eraka</string>
+
+    <!-- Places picker -->
+    <string name="places_title">Where are we?</string>
+    <string name="places_subtitle">Eraka will suggest words that fit this place.</string>
+    <string name="place_home">Home</string>
+    <!-- Eraka 28 Oct 2026: the group whose pictures follow "Where are we?" -->
+    <string name="here_group">Here: %1$s</string>
+    <string name="place_school">School</string>
+    <string name="place_park">Park</string>
+    <string name="place_shop">Shop</string>
+    <string name="place_restaurant">Eating out</string>
+    <string name="place_clinic">Clinic</string>
+    <string name="place_church">Church</string>
+    <string name="place_zoo">Zoo</string>
+    <string name="place_taxi">Taxi / car</string>
+    <string name="place_market">Market</string>
+    <string name="place_village">Village / farm</string>
+    <string name="places_done">Done</string>
+
+    <!-- Caregiver lock -->
+    <string name="gate_title">Grown-ups only</string>
+    <string name="gate_question">What is %1$d + %2$d?</string>
+    <string name="gate_hint">This keeps settings safe from little fingers.</string>
+    <string name="gate_wrong">Not quite – try again.</string>
+    <string name="gate_cancel">Cancel</string>
+
+    <!-- Help & tips -->
+    <string name="tips_title">Help &amp; tips</string>
+    <string name="tips_intro">Short tips for parents, teachers and therapists using Eraka with a child.</string>
+    <string name="tips_section_start">Getting started</string>
+    <string name="tips_section_support">Supporting communication</string>
+    <string name="tips_section_app">Using Eraka</string>
+    <string name="tip_model_t">Show, don\'t test</string>
+    <string name="tip_model_b">Tap the pictures yourself while you talk – \"Let\'s GO to the PARK\". Children learn to use the board by watching you use it, the same way they learn speech by hearing it.</string>
+    <string name="tip_available_t">Keep Eraka close</string>
+    <string name="tip_available_b">Make the phone or tablet available all day – at meals, in the car, at play – not only during \"practice time\". Words are learnt where they are needed.</string>
+    <string name="tip_core_t">Start with powerful words</string>
+    <string name="tip_core_b">Words like MORE, STOP, GO, WANT, HELP, LIKE and NOT work in many situations. Use them often before adding lots of nouns.</string>
+    <string name="tip_wait_t">Wait and watch</string>
+    <string name="tip_wait_b">After you ask something, pause and count slowly to ten in your head. Give the child time to find the picture.</string>
+    <string name="tip_respond_t">Every message counts</string>
+    <string name="tip_respond_b">Respond to every attempt, even if it seems random. If the child taps STOP by accident, stop and see what happens – it teaches that the words have power.</string>
+    <string name="tip_nopressure_t">No pressure to speak</string>
+    <string name="tip_nopressure_b">Using pictures does not stop speech from developing. Never take the device away as a punishment – it is the child\'s voice.</string>
+    <string name="tip_board_t">Building a sentence</string>
+    <string name="tip_board_b">Tap pictures to add them to the sentence strip, then press the yellow Speak button. Delete removes the last picture; hold it to clear everything.</string>
+    <string name="tip_places_t">Words for where you are</string>
+    <string name="tip_places_b">Open the menu and choose \"Where are we?\" – School, Park, Shop… Eraka will then suggest words that fit. No GPS or internet is used.</string>
+    <string name="tip_voice_t">Voice button</string>
+    <string name="tip_voice_b">Tap Voice and speak: Eraka listens on the phone itself and turns your words into pictures. Recordings never leave the device.</string>
+    <string name="tip_lock_t">Grown-ups only</string>
+    <string name="tip_lock_b">Settings, the profile, the progress report and signing out ask a small maths question first, so the child can explore freely without changing things by accident.</string>
+
+    <!-- About -->
+    <string name="about_title">About Eraka</string>
+    <string name="about_what_t">What is Eraka?</string>
+    <string name="about_what_b">Eraka is a free picture-based communication (AAC) app. It helps children who don\'t speak, or speak only a little – including autistic children – say what they want, need and feel by tapping pictures that Eraka speaks out loud. It was designed for children and families in Namibia and works without internet.</string>
+    <string name="about_privacy_t">Privacy &amp; safety</string>
+    <string name="about_privacy_offline">Works offline: the word board, speech and voice recognition all run on this phone. Voice recordings never leave the device.</string>
+    <string name="about_privacy_stored">Saved on this phone: the child\'s first name, birthday, communication level, interests, avatar or photo, and the sentences they build (used for word suggestions and the progress report).</string>
+    <string name="about_privacy_cloud">When online, a backup of the profile, board and sentences is kept in the Google account used to sign in (Google Firebase), so it can be restored on a new phone. Photos you add are never uploaded: they stay on this phone.</string>
+    <string name="about_privacy_location">No location tracking: places are chosen by hand in \"Where are we?\".</string>
+    <string name="about_privacy_usage">Anonymous usage statistics (for example which buttons are used) help us improve Eraka.</string>
+    <string name="about_privacy_delete">To remove data: sign out and uninstall Eraka to clear this phone. To delete the online backup, email us and we will remove it.</string>
+    <string name="about_contact_t">Version &amp; contact</string>
+    <string name="about_version">Version %1$s (build %2$d)</string>
+    <string name="about_contact_b">Questions, ideas or problems? We\'d love to hear from you.</string>
+    <string name="about_contact_button">Email us</string>
+    <string name="eraka_contact_email">kenekekasaona18@gmail.com</string>
+    <string name="about_email_subject">Eraka feedback</string>
+    <string name="about_license">Eraka is based on the open-source OTTAA project and is shared under the GNU GPL v3 licence.</string>
+    <string name="about_arasaac">Pictographic symbols: the property of the Government of Aragón, created by Sergio Palao for ARASAAC (https://arasaac.org), distributed under a Creative Commons licence (BY-NC-SA). Some English labels were corrected for Eraka. Some pictures are photographs and drawings added for Eraka. Avatars: Avataaars by Pablo Stanley (avataaars.com), free for personal and commercial use, generated with DiceBear.</string>
+    <string name="about_third_party">Also uses: whisper.cpp (OpenAI Whisper model, MIT licence) for speech recognition and SimpleNLG (Mozilla Public Licence 2.0) for sentence grammar.</string>
+
+    <!-- Progress report -->
+    <string name="report_title">Progress report</string>
+    <string name="report_subtitle">Based on the sentences built on this phone.</string>
+    <string name="report_week">Sentences this week</string>
+    <string name="report_total">Sentences in total</string>
+    <string name="report_words_per">Pictures per sentence</string>
+    <string name="report_unique">Different words used</string>
+    <string name="report_last7">Last 7 days</string>
+    <string name="report_top">Most-used sentences</string>
+    <string name="report_times">%1$d×</string>
+    <string name="report_empty">No sentences yet. Once the child starts building sentences and pressing Speak, their progress will show up here.</string>
+    <string name="report_share">Share report</string>
+    <string name="report_today">Today</string>
+    <string name="report_share_heading">Eraka progress report for %1$s</string>
+
+    <!-- Menu: extra items -->
+    <string name="menu_favourites">Favourite phrases</string>
+    <string name="menu_games">Games</string>
+    <string name="menu_voice">Voice &amp; speech</string>
+    <string name="menu_backup">Backup &amp; restore</string>
+
+    <!-- Games -->
+    <string name="games_title">Games</string>
+    <string name="games_subtitle">Play and learn words together.</string>
+
+    <!-- Voice & speech -->
+    <string name="voice_title">Voice &amp; speech</string>
+    <string name="voice_test_t">Try it out</string>
+    <string name="voice_test_sample">Hello! I want to play.</string>
+    <string name="voice_test_button">Speak</string>
+    <string name="voice_speed_t">Speed</string>
+    <string name="voice_pitch_t">Pitch</string>
+    <string name="voice_slow">Slow</string>
+    <string name="voice_fast">Fast</string>
+    <string name="voice_low">Low</string>
+    <string name="voice_high">High</string>
+    <string name="voice_choose_t">Voice</string>
+    <string name="voice_choose_hint">Voices installed on this phone that work without internet.</string>
+    <string name="voice_default">Phone default</string>
+    <string name="voice_numbered">Voice %1$d</string>
+    <string name="voice_male">Male</string>
+    <string name="voice_female">Female</string>
+    <string name="voice_male_tip">No male voice is installed on this phone yet. To add one: Android Settings → Text-to-speech output → Google (settings icon) → Install voice data → English (United Kingdom) → choose a voice marked as male and download it. Then come back to this page.</string>
+    <string name="voice_recommended">(recommended)</string>
+    <string name="voice_za_tip">For an accent closer to Namibian English, install a British English voice: phone Settings → Text-to-speech → Google → Install voice data → English (United Kingdom). Eraka will then use it.</string>
+    <string name="voice_za_get">Get the British English voice →</string>
+    <string name="voice_none">No extra offline voices found. You can add more in the phone\'s Settings → Text-to-speech.</string>
+    <string name="voice_reset">Reset to normal</string>
+    <string name="voice_loading">Loading voices…</string>
+
+    <!-- Backup & restore -->
+    <string name="backup_title">Backup &amp; restore</string>
+    <string name="backup_intro">Keep a copy of the child\'s board, sentences and favourite phrases in their Google account, so nothing is lost when changing phones. Your own photos stay on this phone only.</string>
+    <string name="backup_account">Signed in as %1$s</string>
+    <string name="backup_last">Last backup: %1$s</string>
+    <string name="backup_never">No backup made from this phone yet.</string>
+    <string name="backup_now_t">Back up now</string>
+    <string name="backup_now_b">Saves this phone\'s board and sentences online.</string>
+    <string name="backup_now_button">Back up now</string>
+    <string name="backup_restore_t">Restore</string>
+    <string name="backup_restore_b">Replaces the board on this phone with the last online backup. Use this on a new phone.</string>
+    <string name="backup_restore_button">Restore from backup</string>
+    <string name="backup_restore_confirm_t">Restore from backup?</string>
+    <string name="backup_restore_confirm_b">Changes made on this phone since the last backup will be replaced.</string>
+    <string name="backup_restore_confirm_yes">Restore</string>
+    <string name="backup_offline">You\'re offline. Connect to the internet and try again.</string>
+    <string name="backup_not_signed_in">Please sign in first.</string>
+    <string name="backup_uploading">Backing up…</string>
+    <string name="backup_done">Backup sent. It finishes in the background while you\'re online.</string>
+    <string name="backup_restoring">Restoring your board…</string>
+    <string name="backup_restored">Restored! Your board is up to date.</string>
+
+    <!-- Favourite phrases -->
+    <string name="fav_title">Favourite phrases</string>
+    <string name="fav_subtitle">Tap a phrase to say it out loud.</string>
+    <string name="fav_empty">No favourites yet. Add the phrases your child needs most, like \"I need the toilet\" or \"I\'m hungry\".</string>
+    <string name="fav_add">Add a phrase</string>
+    <string name="fav_add_title">Add a favourite</string>
+    <string name="fav_type_hint">Type a phrase…</string>
+    <string name="fav_add_button">Add</string>
+    <string name="fav_from_history">Sentences your child has built</string>
+    <string name="fav_starters">Ideas to start with</string>
+    <string name="fav_added">Added to favourites</string>
+    <string name="fav_exists">That phrase is already a favourite</string>
+    <string name="fav_remove_title">Remove this favourite?</string>
+    <string name="fav_remove_yes">Remove</string>
+    <string name="fav_close">Close</string>
+    <string name="fav_remove_desc">Remove</string>
+    <string-array name="fav_starter_phrases">
+        <item>I need the toilet</item>
+        <item>I\'m hungry</item>
+        <item>I\'m thirsty</item>
+        <item>Help me, please</item>
+        <item>I want to play</item>
+        <item>I\'m tired</item>
+        <item>Stop, please</item>
+        <item>I feel sick</item>
+        <item>I love you</item>
+        <item>All done</item>
+    </string-array>
+
+    <!-- Edit pictogram / picture source / ARASAAC -->
+    <string name="edit_tap_picture">Tap the picture to change it</string>
+    <string name="arasaac_hint">Tap the magnifying glass to search thousands of free ARASAAC pictures.</string>
+    <string name="edit_save">Save</string>
+    <string name="edit_cancel">Cancel</string>
+    <!-- Eraka prediction model switch (Settings > Pictograms) -->
+    <string name="eraka_prediction_category">Word suggestions</string>
+    <string name="eraka_prediction_title">Learn from this child</string>
+    <string name="eraka_prediction_summary">On: suggestions learn from what this child taps, the time of day and the place. Off: the original OTTAA order (used for comparison).</string>
+</resources>

@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eraka_cream_bg">
+
+    <!-- Grass decoration along the bottom edge -->
+    <ImageView
+        android:id="@+id/imageGrass"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="360:80"
+        app:layout_constraintHeight_max="110dp"
+        android:src="@drawable/bg_eraka_grass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Back (hidden on this step by the activity, kept small in the corner) -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_eraka_button_back"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:stateListAnimator="@null"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textColor="@color/eraka_green_dark"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- HEADER -->
+
+    <TextView
+        android:id="@+id/textOnboardingBig"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/lets_get_to_know_this_child"
+        android:textColor="@color/eraka_text_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textOnboardingSmall"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="@string/this_helps_us_personalize_communication"
+        android:textColor="@color/eraka_text_muted"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textOnboardingBig"/>
+
+    <!-- CREAM PANEL holding the form -->
+    <FrameLayout
+        android:id="@+id/cardViewOnboarding"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_eraka_panel"
+        app:layout_constraintBottom_toTopOf="@id/nextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textOnboardingSmall">
+
+        <ScrollView
+            android:id="@+id/onboardingScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:paddingStart="16dp"
+            android:paddingTop="44dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textOnboardingReassurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/no_wrong_answers_reassurance"
+                    android:textColor="@color/eraka_text_muted"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/text_name"
+                    android:textColor="@color/eraka_green_dark"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/constraintNameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_eraka_field"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="16dp"
+                    android:addStatesFromChildren="true">
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_eraka_icon_badge">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_baseline_person_24"
+                            android:tint="@color/eraka_text_dark"/>
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/editTextName"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/childs_name"
+                        android:inputType="text"
+                        android:textColor="@color/eraka_text_dark"
+                        android:textColorHint="@color/eraka_text_muted"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewBirthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/fecha_de_nacimiento"
+                    android:textColor="@color/eraka_green_dark"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/constraintBirthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_eraka_field"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="6dp"
+                    android:addStatesFromChildren="true">
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_eraka_icon_badge">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_event_black_24dp"
+                            android:tint="@color/eraka_text_dark"/>
+                    </FrameLayout>
+
+                    <EditText
+                        android:id="@+id/editTextBirthday"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="12dp"
+                        android:background="@android:color/transparent"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="date|datetime"
+                        android:maxLength="10"
+                        android:textColor="@color/eraka_text_dark"
+                        android:textColorHint="@color/eraka_text_muted"
+                        android:textSize="16sp"/>
+
+                    <ImageButton
+                        android:id="@+id/buttonCalendarDialog"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/fecha_de_nacimiento"
+                        android:onClick="onClick"
+                        android:src="@drawable/ic_event_black_24dp"
+                        android:tint="@color/eraka_green"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textViewCommLevel"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/communication_level"
+                    android:textColor="@color/eraka_green_dark"
+                    android:textSize="13sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:id="@+id/constraintCommLevel"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@drawable/bg_eraka_field"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="12dp"
+                    android:addStatesFromChildren="true">
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_eraka_icon_badge">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="@null"
+                            android:src="@drawable/ic_face_black_24dp"
+                            android:tint="@color/eraka_text_dark"/>
+                    </FrameLayout>
+
+                    <Spinner
+                        android:id="@+id/selectorCommLevel"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="4dp"
+                        android:background="@android:color/transparent"
+                        android:entries="@array/comm_level_options"
+                        android:popupBackground="@drawable/bg_eraka_popup"
+                        android:spinnerMode="dropdown"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_chevron_down"
+                        android:tint="@color/eraka_green"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewInterests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="@string/what_does_your_child_enjoy"
+                    android:textColor="@color/eraka_text_dark"
+                    android:textSize="14sp"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupInterests"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:chipSpacingHorizontal="8dp"
+                    app:chipSpacingVertical="4dp"
+                    app:singleSelection="false">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipFood"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        app:checkedIconTint="@android:color/white"
+                        android:text="@string/interest_food"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAnimals"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        app:checkedIconTint="@android:color/white"
+                        android:text="@string/interest_animals"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipFamily"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        app:checkedIconTint="@android:color/white"
+                        android:text="@string/interest_family"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipMusic"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        app:checkedIconTint="@android:color/white"
+                        android:text="@string/interest_music"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipOutdoors"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        app:checkedIconTint="@android:color/white"
+                        android:text="@string/interest_outdoors"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSchool"
+                        style="@style/Widget.MaterialComponents.Chip.Filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        app:checkedIconTint="@android:color/white"
+                        android:text="@string/interest_school"/>
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- Eraka 22 Oct 2026: skin colour of the people in the pictures (ErakaSkinTone) -->
+                <TextView
+                    android:id="@+id/textViewSkinTone"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="@string/skin_tone_title"
+                    android:textColor="@color/eraka_text_dark"
+                    android:textSize="14sp"/>
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupSkinTone"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    app:chipSpacingHorizontal="8dp"
+                    app:singleSelection="true"
+                    app:selectionRequired="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSkinLight"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        android:text="@string/skin_light"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSkinMedium"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        android:text="@string/skin_medium"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSkinDark"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        android:text="@string/skin_dark"/>
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipSkinMixed"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:textSize="14sp"
+                        android:textColor="@color/chip_text_eraka"
+                        app:chipBackgroundColor="@color/chip_bg_eraka"
+                        app:chipStrokeWidth="0dp"
+                        app:chipMinHeight="40dp"
+                        android:text="@string/skin_mixed"/>
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- Eraka 28 Oct 2026: colour of the people in the pictures, optional. Five tiles with
+                     the same ARASAAC picture in the five emoji skin shades, no colour names.
+                     Nothing chosen = ARASAAC's own colour. -->
+                <TextView
+                    android:id="@+id/textViewToneQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="@string/tone_question"
+                    android:textColor="@color/eraka_text_dark"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/toneRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout android:id="@+id/tone1" style="@style/ErakaToneTile"
+                        android:contentDescription="@string/tone_option_1">
+                        <ImageView android:id="@+id/tone1Img" style="@style/ErakaToneImage"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/tone2" style="@style/ErakaToneTile"
+                        android:contentDescription="@string/tone_option_2">
+                        <ImageView android:id="@+id/tone2Img" style="@style/ErakaToneImage"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/tone3" style="@style/ErakaToneTile"
+                        android:contentDescription="@string/tone_option_3">
+                        <ImageView android:id="@+id/tone3Img" style="@style/ErakaToneImage"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/tone4" style="@style/ErakaToneTile"
+                        android:contentDescription="@string/tone_option_4">
+                        <ImageView android:id="@+id/tone4Img" style="@style/ErakaToneImage"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/tone5" style="@style/ErakaToneTile"
+                        android:contentDescription="@string/tone_option_5">
+                        <ImageView android:id="@+id/tone5Img" style="@style/ErakaToneImage"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+        <!-- Eraka 27 Oct 2026: shows that there is more below; hidden at the bottom (ErakaScrollHint) -->
+        <LinearLayout
+            android:id="@+id/scrollHint"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_eraka_scroll_hint"
+            android:clickable="true"
+            android:contentDescription="@string/scroll_more_below"
+            android:elevation="6dp"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="14dp"
+            android:paddingEnd="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scroll_more_below"
+                android:textColor="@color/eraka_text_on_mustard"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_eraka_arrow_down"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <!-- Mascot sits on the top edge of the panel (animated in by the activity) -->
+    <ImageView
+        android:id="@+id/brandBanner2"
+        android:layout_width="300dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/login_children_desc"
+        android:elevation="4dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_eraka_children"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textOnboardingSmall"/>
+
+    <!-- Big mustard NEXT button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_eraka_button_mustard"
+        android:paddingBottom="5dp"
+        android:stateListAnimator="@null"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/eraka_text_on_mustard"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/imageGrass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

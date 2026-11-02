@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Side-menu header: mustard card, avatar in a green ring, "Welcome back, <name>!".
+     avatarIconMain + navHeaderGreeting/navHeaderName are used by Principal.java. -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:background="@drawable/bg_eraka_nav_header"
+        android:paddingStart="16dp"
+        android:paddingEnd="14dp">
+
+        <!-- Small Eraka logo in the corner -->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_eraka"/>
+
+        <FrameLayout
+            android:id="@+id/avatarRing"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/bg_eraka_avatar_ring_small"
+            android:elevation="3dp"
+            android:padding="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/avatarIconMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/nav_header_desc"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_avatar35"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/navHeaderGreeting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:text="@string/nav_welcome_back"
+            android:textColor="@color/eraka_text_on_mustard"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@id/navHeaderName"
+            app:layout_constraintEnd_toStartOf="@id/imageView"
+            app:layout_constraintStart_toEndOf="@id/avatarRing"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/navHeaderName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/eraka_text_dark"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/navHeaderTagline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/avatarRing"
+            app:layout_constraintTop_toBottomOf="@id/navHeaderGreeting"/>
+
+        <TextView
+            android:id="@+id/navHeaderTagline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/nav_lets_talk_today"
+            android:textColor="@color/eraka_green_dark"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/avatarRing"
+            app:layout_constraintTop_toBottomOf="@id/navHeaderName"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

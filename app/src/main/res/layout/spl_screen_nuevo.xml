@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Splash screen - Eraka style. IDs used by SplashActivity: logo_inicial (beat animation),
+     progress_circular, txtCargando. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eraka_cream_bg"
+    tools:context=".welcome.SplashActivity">
+
+    <!-- Bubbles along the bottom -->
+    <ImageView
+        android:id="@+id/imageBubblesSplash"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_eraka_grass"
+        app:layout_constraintDimensionRatio="360:80"
+        app:layout_constraintHeight_max="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Eraka logo in a big white badge -->
+    <FrameLayout
+        android:id="@+id/logoBadgeSplash"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_eraka_logo_badge"
+        android:elevation="4dp"
+        android:padding="18dp"
+        app:layout_constraintBottom_toTopOf="@id/textSplashTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/logo_inicial"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher_eraka"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textSplashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/app_name"
+        android:textColor="@color/eraka_text_dark"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textSplashTagline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoBadgeSplash"/>
+
+    <TextView
+        android:id="@+id/textSplashTagline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="48dp"
+        android:gravity="center"
+        android:text="@string/eraka_helps_children_communicate"
+        android:textColor="@color/eraka_text_muted"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@id/progress_circular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSplashTitle"/>
+
+    <ProgressBar
+        android:id="@+id/progress_circular"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="160dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="36dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/eraka_mustard"
+        android:indeterminateTintMode="src_in"
+        android:progressBackgroundTint="@color/eraka_mustard_light"
+        app:layout_constraintBottom_toTopOf="@id/txtCargando"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSplashTagline"/>
+
+    <TextView
+        android:id="@+id/txtCargando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/splash_loading"
+        android:textColor="@color/eraka_green_dark"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_circular"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,128 @@
+[
+  {
+    "id": 283,
+    "descripcion": {
+      "es": "Insecto de color amarillo y negro.Estos insectos  fabrican miel y cera",
+      "en": "Yellow and black insect. These insects make honey and wax"
+    }
+  },
+  {
+    "id": 342,
+    "descripcion": {
+      "es": "Animal de 4 patas, con pelo en todo su cuerpo y 2 orejas sobre la cabeza. Suele convivir con personas y es fiel a sus dueños.",
+      "en": "Four-legged animal, with hair all over its body and two ears on its head. It usually lives with people and is faithful to its owners."
+    }
+  },
+  {
+    "id": 313,
+    "descripcion": {
+      "en": "Four-legged animal that emits meows and hunts mice.",
+      "es": "Animal de cuatro patas que emite maullidos y caza ratones."
+    }
+  },
+  {
+    "id": 337,
+    "descripcion": {
+      "es": "Animal acuatico que tiene patas cortas y un pico",
+      "en": "Aquatic animal that has short legs and a beak"
+    }
+  },
+  {
+    "id": 320,
+    "descripcion": {
+      "es": "Animal que tiene el cuello muy largo y delgado, la cabeza con dos cuernos pequeños y pelo de color amarillo con manchas oscuras. Vive en África y come hojas de los árboles.",
+      "en": "An animal that has a very long and thin neck, a head with two small horns and yellow hair with dark spots. It lives in Africa and eats leaves from trees."
+    }
+  },
+  {
+    "id": 323,
+    "descripcion": {
+      "es": "Animal mamífero grande. El pelo es marrón claro, tiene una cola larga y los dientes y las uñas son fuertes.",
+      "en": "Large mammal. The hair is light brown, it has a long tail and the teeth and nails are strong."
+    }
+  },
+  {
+    "id": 327,
+    "descripcion": {
+      "es": "Insecto con alas grandes de varios colores que poliniza las flores",
+      "en": "Insect with large, multicolored wings that pollinate flowers"
+    }
+  },
+  {
+    "id": 332,
+    "descripcion": {
+      "es": "Animal mamifero del cual se saca la lana durante el verano",
+      "en": "Mammal animal from which the wool is taken during the summer"
+    }
+  },
+  {
+    "id": 340,
+    "descripcion": {
+      "es": "Un cardumen es un conjunto de ",
+      "en": "A school of fish is a group of"
+    }
+  },
+  {
+    "id": 356,
+    "descripcion": {
+      "es": "Animal con caparazon que puede ser terrestre o marino y camina lento",
+      "en": "nimal with a shell that can be terrestrial or marine and walks slowly"
+    }
+  },
+  {
+    "id": 359,
+    "descripcion": {
+      "es": "Animal que se arrastra por el piso y tiene veneno ",
+      "en": "Animal that crawls on the floor and has poison "
+    }
+  },
+  {
+    "id": 290,
+    "descripcion": {
+      "es": "Es un pescado bien grande que lanza un chorro de agua fuerte por la cabeza",
+      "en": "It's a big fish that squirts a lot of water over its head"
+    }
+  },
+  {
+    "id": 296,
+    "descripcion": {
+      "es": "Animal que vive en el desierto. Es usado como un medio de transporte  y cuenta con dos jorobas que le permiten reservar agua en su cuerpo",
+      "en": "Animal that lives in the desert. It is used as a means of transportation and has two humps that allow it to reserve water in its body"
+    }
+  },
+  {
+    "id": 297,
+    "descripcion": {
+      "es": "Animal que canta y tiene un color amarrillo",
+      "en": "Animal that sings and has a yellow color"
+    }
+  },
+  {
+    "id": 293,
+    "descripcion": {
+      "es": "Animal mamífero macho de tamaño mediano o grande. Tiene la cabeza alargada y las orejas pequeñas. Las uñas se llaman cascos. Tiene cola y pelo largo en el cuello. Se domestica con facilidad.",
+      "en": "Male mammal of medium or large size. It has an elongated head and small ears. The claws are called hooves. It has a tail and long hair on its neck. It is easily domesticated."
+    }
+  },
+  {
+    "id": 294,
+    "descripcion": {
+      "es": "Animal mamífero. Tiene los cuernos hacia atrás, un mechón de pelo en la mandíbula inferior y una cola muy corta. Es un animal muy ágil y puede saltar y subir por sitios muy inclinados.",
+      "en": "Mammal animal. It has backwards horns, a tuft of hair on its lower jaw and a very short tail. It is a very agile animal and can jump and climb very steeply."
+    }
+  },
+  {
+    "id": 286,
+    "descripcion": {
+      "es": "Burro,Abeja y Caballo son :",
+      "en": "Donkey, Bee and Horse are:"
+    }
+  },
+  {
+    "288": "",
+    "descripcion": {
+      "es": "Es un animal de carga que tiene las orejas bien largas y es mas o menos parecido al caballo",
+      "en": "It is a pack animal that has very long ears and is more or less like the horse"
+    }
+  }
+]

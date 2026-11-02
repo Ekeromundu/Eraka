@@ -1,0 +1,13 @@
+{
+  "_about": "Eraka 28 Oct 2026: starter pictures for each 'Where are we?' place (picture ids; the first one is the group picture). Used by ErakaPlaceWords: the suggestion row (from the first day, the child's own use at that place takes over) and the 'Here' group. HOME is only used for the Here group. Drafted by Claude from the interviews and the existing pictures; to be checked by parents and teachers.",
+  "HOME":       [653, 118, 51, 5033, 34, 5001, 628, 632, 703, 5010, 5012, 5034],
+  "SCHOOL":     [662, 626, 553, 762, 18, 32, 15, 930, 589, 34, 615, 5033, 5038, 703],
+  "TAXI":       [610, 30, 5011, 662, 653, 5015, 675, 567, 23, 101, 139],
+  "STORE":      [5015, 13, 567, 494, 5021, 501, 5023, 495, 474, 473, 5010, 930, 688],
+  "MARKET":     [675, 13, 567, 5046, 5007, 463, 478, 483, 435, 5047, 597, 118],
+  "CHURCH":     [5043, 5042, 6, 21, 101, 377, 5033, 500, 253, 137, 5027, 653, 5012, 171],
+  "VILLAGE":    [5027, 614, 5049, 357, 294, 288, 342, 5039, 5047, 5005, 5024, 5026, 34, 70],
+  "PARK":       [672, 34, 996, 70, 38, 5024, 5026, 615, 86, 253, 500, 137, 5010],
+  "HOSPITAL":   [5044, 629, 5002, 821, 827, 825, 819, 121, 23, 628, 703, 831, 5033, 500],
+  "RESTAURANT": [685, 118, 51, 597, 5021, 505, 481, 497, 500, 1026, 1027, 5033, 5010, 5012]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toast_layout_root"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="64dp"
+    android:background="@drawable/toast_shape">
+
+    <!-- Eraka 19 Oct 2026: smaller speech bubble (was 100 dp avatar, 100 dp tall, full width) -->
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/imageViewAvatarToast"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_avatar35"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80dp"
+        android:maxWidth="260dp"
+        android:id="@+id/text"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="20dp"
+        android:text="Texto de prueba"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textColor="#FFF"/>
+
+</LinearLayout>

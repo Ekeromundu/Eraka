@@ -1,0 +1,4 @@
+rootProject.name = "Eraka"
+include ':app', ':Library'
+include ':lib'
+project(':lib').projectDir = new File('C:/Users/KEKasaona/Desktop/whisper-latest/examples/whisper.android/lib')

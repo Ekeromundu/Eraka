@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Eraka playful palette: mustard + leaf green on warm cream -->
+<resources>
+    <color name="eraka_cream_bg">#FFF1C2</color>
+    <color name="eraka_panel">#FFF9E3</color>
+    <color name="eraka_field_bg">#FFFDF4</color>
+    <color name="eraka_field_stroke">#EFD27E</color>
+
+    <color name="eraka_mustard">#E9A92A</color>
+    <color name="eraka_mustard_dark">#B97F10</color>
+    <color name="eraka_mustard_light">#FFE39A</color>
+    <color name="eraka_mustard_soft">#FFEFC2</color>
+
+    <color name="eraka_green">#4E9F5F</color>
+    <color name="eraka_green_dark">#357A45</color>
+    <color name="eraka_green_light">#DDEFD9</color>
+    <color name="eraka_green_grass">#8CCB8F</color>
+
+    <color name="eraka_text_dark">#2F2A1E</color>
+    <color name="eraka_text_muted">#7B715D</color>
+    <color name="eraka_text_on_mustard">#3A2A05</color>
+    <!-- cream wash over the blurred page while the loader shows (~60% opacity) -->
+    <color name="eraka_loader_scrim">#99FFF4D6</color>
+    <color name="eraka_green_soft">#A8D8AE</color>
+    <color name="eraka_delete_red">#C0392B</color>
+</resources>

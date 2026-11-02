@@ -1,0 +1,4 @@
+# ninja log v5
+168	2961	8062374952242196	CMakeFiles/whisper_jni.dir/ggml-alloc.c.o	e8734d3e1b572c9c
+2	4715	8062374970220499	CMakeFiles/whisper_jni.dir/whisper_jni.cpp.o	791a055a51b3f670
+139	5047	8062374973507094	CMakeFiles/whisper_jni.dir/ggml-backend.cpp.o	42323c387f4eb9dd

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Sexo">
+        <item>Choose gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Fluid</item>
+        <item>Binary</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="listSexo" translatable="false">
+        <item>@string/MaleUser</item>
+        <item>@string/FemaleUser</item>
+        <item>@string/FluidUser</item>
+        <item>@string/BinaryUser</item>
+        <item>@string/OtherUser</item>
+    </string-array>
+    <string-array name="list_sexo_valores" translatable="false">
+        <item>MASCULINO</item>
+        <item>FEMENINO</item>
+        <item>FLUIDO</item>
+        <item>BINARIO</item>
+        <item>OTRO</item>
+    </string-array>
+    <string-array name="comm_level_options">
+        <item>Select level</item>
+        <item>Nonverbal</item>
+        <item>Minimally verbal</item>
+        <item>Emerging verbal</item>
+    </string-array>
+</resources>

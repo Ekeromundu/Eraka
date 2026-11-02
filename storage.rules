@@ -1,0 +1,41 @@
+rules_version = '2';
+// Eraka security rules for Cloud Storage (28 Sept 2026).
+// Before: "allow read, write: if true" = anyone on the internet could read or
+// delete every family's files. Now: signed-in users only, and only their own files.
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    // Shared starter content (default pictures, groups, suggestion files):
+    // any signed-in user may read, nobody may change it from the app.
+    match /Archivos_Paises/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+    match /Archivos_Sugerencias/{allPaths=**} {
+      allow read: if request.auth != null;
+      allow write: if false;
+    }
+
+    // Per-user folders keyed by user id, e.g. Archivos_Usuarios/Fotos/<uid>/photo.jpg
+    // and Archivos_Usuarios/Avatar/<uid>/...
+    match /Archivos_Usuarios/{folder}/{uid}/{allPaths=**} {
+      allow read, write: if request.auth != null
+                         && request.auth.uid == uid
+                         && (request.resource == null || request.resource.size < 10 * 1024 * 1024);
+    }
+
+    // Per-user backup files named with the e-mail (OTTAA's scheme), e.g.
+    // Archivos_Usuarios/Pictos/pictos_<email>_en.txt
+    match /Archivos_Usuarios/{folder}/{fileName} {
+      allow read, write: if request.auth != null
+                         && request.auth.token.email != null
+                         && fileName.matches('^[a-zA-Z]+_' + request.auth.token.email.replace('[.]', '[.]').replace('[+]', '[+]') + '_[a-z]+[.]txt$')
+                         && (request.resource == null || request.resource.size < 10 * 1024 * 1024);
+    }
+
+    // Everything else: closed.
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}

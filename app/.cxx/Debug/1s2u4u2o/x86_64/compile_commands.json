@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/kenek/Desktop/OTTA Project/OTTAAProject - Copy - Copy/app/.cxx/Debug/1s2u4u2o/x86_64",
+  "command": "C:\\Users\\kenek\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android24 --sysroot=C:/Users/kenek/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -std=c++11 -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\whisper_jni.cpp.o -c \"C:\\Users\\kenek\\Desktop\\OTTA Project\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\whisper_jni.cpp\"",
+  "file": "C:\\Users\\kenek\\Desktop\\OTTA Project\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\whisper_jni.cpp"
+},
+{
+  "directory": "C:/Users/kenek/Desktop/OTTA Project/OTTAAProject - Copy - Copy/app/.cxx/Debug/1s2u4u2o/x86_64",
+  "command": "C:\\Users\\kenek\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=x86_64-none-linux-android24 --sysroot=C:/Users/kenek/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -std=c++11 -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\whisper.cpp.o -c \"C:\\Users\\kenek\\Desktop\\OTTA Project\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\whisper.cpp\"",
+  "file": "C:\\Users\\kenek\\Desktop\\OTTA Project\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\whisper.cpp"
+}
+]

@@ -1,0 +1,23 @@
+{
+  "rules": {
+    // Eraka security rules for the Realtime Database (28 Sept 2026).
+    // Every node the app uses is <Node>/<uid>/... ; a user can only read/write their own <uid>.
+    "version": {
+      ".read": "auth != null",
+      ".write": false
+    },
+    // OTTAA's global photo index, keyed by push id (not by uid). Signed-in users only.
+    "Fotos": {
+      "$pushKey": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "$node": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid"
+      }
+    }
+  }
+}

@@ -1,0 +1,799 @@
+{
+ "_about": "Eraka corrections to OTTAA's built-in vocabulary (pictogram audit, 13 Oct 2026, decisions by Keneke). hide = removed everywhere (tiles, suggestions, exploration, gallery, voice). caregiver_only = not shown to the child (tiles, suggestions, exploration, voice) but kept in the gallery. rename = new English label, applied only while the label is still OTTAA's original (a parent's own label is never overwritten). Pictures themselves are unchanged. add = new pictograms (22 Oct 2026) with an ARASAAC drawing in res/drawable as \"picto\"; added to the pictogram list and to the listed groups and ALL every time the vocabulary loads, but only when the drawing exists in the app, so a missing drawing never shows an empty tile. photo = a real photograph instead of OTTAA's drawing for an existing pictogram (22 Oct 2026); applied only while the picture is still OTTAA's original (\"from\") and the photo exists in the app. add_groups = new groups (e.g. My day), see its _about. Picture names: eraka_d_* are ARASAAC drawings (people get the chosen skin tone), other eraka_* are photos.",
+ "hide": {
+  "78": "make love",
+  "87": "take a walk (duplicate of 38)",
+  "90": "paint (duplicate of 43)",
+  "116": "travel (same picture as 107)",
+  "134": "drunk",
+  "135": "nice (duplicate of 136)",
+  "144": "expensive (duplicate)",
+  "164": "in love",
+  "172": "ugly",
+  "181": "happy (same picture as 171)",
+  "203": "bad (duplicate)",
+  "245": "chubby",
+  "268": "all (duplicate)",
+  "274": "crazy",
+  "337": "duck (duplicate)",
+  "362": "cock (duplicate of 310)",
+  "375": "pig (same picture as 301)",
+  "502": "beer",
+  "503": "wine",
+  "510": "fish (duplicate)",
+  "557": "in love (duplicate)",
+  "580": "cartoons (duplicate)",
+  "588": "invoice",
+  "649": "bar",
+  "661": "disco",
+  "700": "Blockbuster",
+  "718": "rehab",
+  "767": "ball (duplicate of 996, in no group)",
+  "789": "butt",
+  "806": "boobs",
+  "905": "none (duplicate of 218)",
+  "906": "none (duplicate of 218)",
+  "915": "who? (duplicate of 914)",
+  "920": "yours (same picture as 919)",
+  "923": "and (duplicate)",
+  "928": "bikini",
+  "968": "bra",
+  "986": "story (same picture as 552)",
+  "1016": "computer (duplicate of 755)",
+  "1017": "book (duplicate)"
+ },
+ "caregiver_only": {
+  "712": "physical abuse",
+  "713": "verbal abuse",
+  "878": "aspirin",
+  "881": "decongestant",
+  "882": "digestive",
+  "884": "syrup",
+  "886": "pills"
+ },
+ "rename": {
+  "1": {
+   "from": "escort",
+   "to": "go with"
+  },
+  "9": {
+   "from": "change diapper",
+   "to": "change nappy"
+  },
+  "54": {
+   "from": "hook up",
+   "to": "button up"
+  },
+  "88": {
+   "from": "beat legs",
+   "to": "kick"
+  },
+  "101": {
+   "from": "seat",
+   "to": "sit down"
+  },
+  "119": {
+   "from": "dull",
+   "to": "bored"
+  },
+  "122": {
+   "from": "acid",
+   "to": "sour"
+  },
+  "125": {
+   "from": "grieved",
+   "to": "sorry"
+  },
+  "156": {
+   "from": "unkwown",
+   "to": "unknown"
+  },
+  "179": {
+   "from": "chilly",
+   "to": "cold drink"
+  },
+  "199": {
+   "from": "lean",
+   "to": "clean"
+  },
+  "200": {
+   "from": "nice",
+   "to": "pretty"
+  },
+  "210": {
+   "from": "equals",
+   "to": "same"
+  },
+  "233": {
+   "from": "few",
+   "to": "a little"
+  },
+  "280": {
+   "from": "shamefaced",
+   "to": "embarrassed"
+  },
+  "297": {
+   "from": "bird",
+   "to": "canary"
+  },
+  "310": {
+   "from": "cock",
+   "to": "rooster"
+  },
+  "335": {
+   "from": "pidgeon",
+   "to": "pigeon"
+  },
+  "385": {
+   "from": "Help",
+   "to": "help me"
+  },
+  "398": {
+   "from": "sandwich",
+   "to": "bread roll"
+  },
+  "401": {
+   "from": "cappchino",
+   "to": "cappuccino"
+  },
+  "421": {
+   "from": "fried eg",
+   "to": "fried egg"
+  },
+  "426": {
+   "from": "choclote milk",
+   "to": "chocolate milk"
+  },
+  "499": {
+   "from": "te",
+   "to": "tea"
+  },
+  "515": {
+   "from": "hamburguer",
+   "to": "hamburger"
+  },
+  "525": {
+   "from": "a",
+   "to": "to"
+  },
+  "526": {
+   "from": "before",
+   "to": "in front of"
+  },
+  "564": {
+   "from": "drink",
+   "to": "a drink"
+  },
+  "600": {
+   "from": "desert",
+   "to": "dessert"
+  },
+  "622": {
+   "from": "futbol player",
+   "to": "football player"
+  },
+  "657": {
+   "from": "dinning room",
+   "to": "dining room"
+  },
+  "816": {
+   "from": "fall",
+   "to": "autumn"
+  },
+  "831": {
+   "from": "cold",
+   "to": "a cold"
+  },
+  "835": {
+   "from": "Football",
+   "to": "soccer"
+  },
+  "850": {
+   "from": "minim",
+   "to": "half note"
+  },
+  "853": {
+   "from": "chore",
+   "to": "choir"
+  },
+  "878": {
+   "from": "aspirine",
+   "to": "aspirin"
+  },
+  "881": {
+   "from": "descongestant",
+   "to": "decongestant"
+  },
+  "911": {
+   "from": "who?",
+   "to": "who is it?"
+  },
+  "974": {
+   "from": "snicker",
+   "to": "takkie"
+  },
+  "982": {
+   "from": "kitchenet",
+   "to": "toy kitchen"
+  },
+  "504": {
+   "from": "poultry",
+   "to": "chicken"
+  },
+  "501": {
+   "from": "soda",
+   "to": "cooldrink"
+  },
+  "629": {
+   "from": "medic",
+   "to": "doctor"
+  }
+ },
+ "add": {
+  "5001": {
+   "en": "sleep",
+   "tipo": 3,
+   "picto": "eraka_sleep",
+   "groups": [
+    0
+   ],
+   "why": "parent starter messages, 22 Oct 2026"
+  },
+  "5002": {
+   "en": "hurt",
+   "tipo": 4,
+   "picto": "eraka_hurt",
+   "groups": [
+    20,
+    9
+   ],
+   "why": "parent starter messages (\"you hurt me\")"
+  },
+  "5003": {
+   "en": "phone",
+   "tipo": 2,
+   "picto": "eraka_phone",
+   "groups": [
+    4
+   ],
+   "why": "parent starter messages (\"give me phone\")"
+  },
+  "5005": {
+   "en": "porridge",
+   "tipo": 2,
+   "picto": "eraka_porridge",
+   "groups": [
+    3,
+    -1895165
+   ],
+   "why": "liked foods (oats, porridge)"
+  },
+  "5006": {
+   "en": "cereal",
+   "tipo": 2,
+   "picto": "eraka_cereal",
+   "groups": [
+    3,
+    -1895165
+   ],
+   "why": "liked foods (Weet-Bix)"
+  },
+  "5007": {
+   "en": "meat",
+   "tipo": 2,
+   "picto": "eraka_meat",
+   "groups": [
+    3,
+    533264,
+    1624279
+   ],
+   "why": "liked foods"
+  },
+  "5008": {
+   "en": "noodles",
+   "tipo": 2,
+   "picto": "eraka_noodles",
+   "groups": [
+    3,
+    533264,
+    1624279
+   ],
+   "why": "liked foods"
+  },
+  "5009": {
+   "en": "muffin",
+   "tipo": 2,
+   "picto": "eraka_muffin",
+   "groups": [
+    3,
+    1377957,
+    -1895165
+   ],
+   "why": "liked foods"
+  },
+  "5010": {
+   "en": "more",
+   "tipo": 6,
+   "picto": "eraka_more",
+   "groups": [
+    7,
+    11
+   ],
+   "why": "core word missing from OTTAA (22 Oct 2026)"
+  },
+  "5011": {
+   "en": "stop",
+   "tipo": 5,
+   "picto": "eraka_stop",
+   "groups": [
+    11,
+    0
+   ],
+   "why": "core word missing from OTTAA (22 Oct 2026)"
+  },
+  "5012": {
+   "en": "finished",
+   "tipo": 4,
+   "picto": "eraka_finished",
+   "groups": [
+    11,
+    20
+   ],
+   "why": "core word missing from OTTAA (22 Oct 2026); also \"all done\""
+  },
+  "5013": {
+   "en": "come",
+   "tipo": 3,
+   "picto": "eraka_come",
+   "groups": [
+    0
+   ],
+   "why": "core word missing from OTTAA (22 Oct 2026)"
+  },
+  "5014": {
+   "en": "we",
+   "tipo": 1,
+   "picto": "eraka_we",
+   "groups": [
+    17,
+    19
+   ],
+   "why": "core word missing from OTTAA (22 Oct 2026); parent P2 messages (\"can we...\")"
+  },
+  "5015": {
+   "en": "shop",
+   "tipo": 2,
+   "picto": "eraka_shop",
+   "groups": [
+    13,
+    21
+   ],
+   "why": "parent P2 (\"go shopping\"); OTTAA only had bike/burger/pizza/poultry shop"
+  },
+  "5016": {
+   "en": "haircut",
+   "tipo": 2,
+   "picto": "eraka_haircut",
+   "groups": [
+    30
+   ],
+   "why": "parent P2 (\"may I have a haircut\")"
+  },
+  "5017": {
+   "en": "do laundry",
+   "tipo": 3,
+   "picto": "eraka_laundry",
+   "groups": [
+    4,
+    0
+   ],
+   "why": "parent P2 (\"let's go and do laundry\")"
+  },
+  "5018": {
+   "en": "oshifima",
+   "tipo": 2,
+   "picto": "eraka_oshifima",
+   "groups": [
+    3,
+    533264,
+    1624279
+   ],
+   "why": "Namibian photo (22 Oct 2026)"
+  },
+  "5019": {
+   "en": "biltong",
+   "tipo": 2,
+   "picto": "eraka_biltong",
+   "groups": [
+    3,
+    1377957
+   ],
+   "why": "Namibian photo (22 Oct 2026)"
+  },
+  "5020": {
+   "en": "vetkoek",
+   "tipo": 2,
+   "picto": "eraka_vetkoek",
+   "groups": [
+    3,
+    -1895165,
+    1377957
+   ],
+   "why": "Namibian photo (22 Oct 2026)"
+  },
+  "5021": {
+   "en": "chips",
+   "tipo": 2,
+   "picto": "eraka_chips",
+   "groups": [
+    3,
+    533264,
+    1624279,
+    1377957
+   ],
+   "why": "photo; \"fried chips\" in a parent's list"
+  },
+  "5022": {
+   "en": "Namibia",
+   "tipo": 6,
+   "picto": "eraka_namibia",
+   "groups": [
+    13
+   ],
+   "why": "parent P2 (\"I live in Namibia\"); type 6 so no sentence is built around a country name"
+  },
+  "5023": {
+   "en": "bread",
+   "tipo": 2,
+   "picto": "eraka_bread",
+   "groups": [
+    3,
+    -1895165,
+    533264,
+    1377957
+   ],
+   "why": "common early word missing from OTTAA (22 Oct 2026)"
+  },
+  "5024": {
+   "en": "tree",
+   "tipo": 2,
+   "picto": "eraka_tree",
+   "groups": [
+    14,
+    13
+   ],
+   "why": "common early word missing from OTTAA (22 Oct 2026)"
+  },
+  "5025": {
+   "en": "playground",
+   "tipo": 2,
+   "picto": "eraka_playground",
+   "groups": [
+    13
+   ],
+   "why": "common early word missing from OTTAA (22 Oct 2026)"
+  },
+  "5026": {
+   "en": "sun",
+   "tipo": 2,
+   "picto": "eraka_sun",
+   "groups": [
+    14,
+    22
+   ],
+   "why": "common early word missing from OTTAA (22 Oct 2026)"
+  },
+  "5027": {
+   "en": "grandma",
+   "tipo": 1,
+   "picto": "eraka_d_grandma",
+   "groups": [
+    17
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5028": {
+   "en": "aunt",
+   "tipo": 1,
+   "picto": "eraka_d_aunt",
+   "groups": [
+    17
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5029": {
+   "en": "uncle",
+   "tipo": 1,
+   "picto": "eraka_d_uncle",
+   "groups": [
+    17
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5030": {
+   "en": "cousin",
+   "tipo": 1,
+   "picto": "eraka_d_cousin",
+   "groups": [
+    17
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5031": {
+   "en": "baby",
+   "tipo": 1,
+   "picto": "eraka_d_baby",
+   "groups": [
+    17
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5032": {
+   "en": "wake up",
+   "tipo": 3,
+   "picto": "eraka_d_wake_up",
+   "groups": [
+    0
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5033": {
+   "en": "toilet",
+   "tipo": 2,
+   "picto": "eraka_d_toilet",
+   "groups": [
+    30,
+    13
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5034": {
+   "en": "bath",
+   "tipo": 3,
+   "picto": "eraka_d_bath",
+   "groups": [
+    0,
+    30
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5035": {
+   "en": "get dressed",
+   "tipo": 3,
+   "picto": "eraka_d_get_dressed",
+   "groups": [
+    0,
+    16
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5036": {
+   "en": "school uniform",
+   "tipo": 2,
+   "picto": "eraka_uniform",
+   "groups": [
+    16,
+    5
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5037": {
+   "en": "walk to school",
+   "tipo": 3,
+   "picto": "eraka_d_walk_to_school",
+   "groups": [
+    0,
+    5
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5038": {
+   "en": "homework",
+   "tipo": 2,
+   "picto": "eraka_d_homework",
+   "groups": [
+    5
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5039": {
+   "en": "fetch water",
+   "tipo": 3,
+   "picto": "eraka_fetch_water",
+   "groups": [
+    0,
+    4
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5040": {
+   "en": "sweep",
+   "tipo": 3,
+   "picto": "eraka_d_sweep",
+   "groups": [
+    0,
+    4
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5041": {
+   "en": "wash dishes",
+   "tipo": 3,
+   "picto": "eraka_d_wash_dishes",
+   "groups": [
+    0,
+    4
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5042": {
+   "en": "pray",
+   "tipo": 3,
+   "picto": "eraka_d_pray",
+   "groups": [
+    0
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5043": {
+   "en": "church",
+   "tipo": 2,
+   "picto": "eraka_church",
+   "groups": [
+    13
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5044": {
+   "en": "clinic",
+   "tipo": 2,
+   "picto": "eraka_clinic",
+   "groups": [
+    13,
+    25
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5045": {
+   "en": "braai",
+   "tipo": 2,
+   "picto": "eraka_braai",
+   "groups": [
+    3
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5046": {
+   "en": "kapana",
+   "tipo": 2,
+   "picto": "eraka_kapana",
+   "groups": [
+    3
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5047": {
+   "en": "mahangu",
+   "tipo": 2,
+   "picto": "eraka_mahangu",
+   "groups": [
+    3
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5048": {
+   "en": "radio",
+   "tipo": 2,
+   "picto": "eraka_radio",
+   "groups": [
+    4
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5049": {
+   "en": "cattle",
+   "tipo": 2,
+   "picto": "eraka_cattle",
+   "groups": [
+    2
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  },
+  "5050": {
+   "en": "donkey cart",
+   "tipo": 2,
+   "picto": "eraka_donkey_cart",
+   "groups": [
+    23
+   ],
+   "why": "Namibian routines and extended family, 23 Oct 2026"
+  }
+ },
+ "photo": {
+  "342": {
+   "from": "perro",
+   "to": "eraka_photo_dog",
+   "label": "dog"
+  },
+  "357": {
+   "from": "vaca",
+   "to": "eraka_photo_cow",
+   "label": "cow"
+  },
+  "687": {
+   "from": "semaforo",
+   "to": "eraka_photo_traffic_light",
+   "label": "traffic light"
+  },
+  "497": {
+   "from": "ic_bebida",
+   "to": "eraka_photo_juice",
+   "label": "juice"
+  },
+  "629": {
+   "from": "ic_medico",
+   "to": "eraka_photo_doctor",
+   "label": "doctor"
+  },
+  "475": {
+   "from": "pera",
+   "to": "eraka_photo_pear",
+   "label": "pear"
+  },
+  "435": {
+   "from": "naranja",
+   "to": "eraka_photo_orange",
+   "label": "orange"
+  },
+  "500": {
+   "from": "agua",
+   "to": "eraka_photo_water",
+   "label": "water"
+  },
+  "481": {
+   "from": "zid_arroz",
+   "to": "eraka_photo_rice",
+   "label": "rice"
+  },
+  "480": {
+   "from": "zid_pasta",
+   "to": "eraka_photo_pasta",
+   "label": "pasta"
+  },
+  "288": {
+   "from": "asno",
+   "to": "eraka_photo_donkey",
+   "label": "donkey"
+  }
+ },
+ "add_groups": {
+  "_about": "New groups (23 Oct 2026). Created once when the group picture exists (or its fallback); members in this order, pictures without a drawing yet are skipped and added later in their place. Pictures a parent adds to the group stay after these.",
+  "6001": {
+   "en": "My day",
+   "tipo": 0,
+   "picto": "eraka_d_my_day",
+   "fallback": "tiempos",
+   "members": [
+    5032,
+    5033,
+    5034,
+    5035,
+    5036,
+    594,
+    5037,
+    662,
+    589,
+    5038,
+    34,
+    5039,
+    5040,
+    590,
+    5041,
+    773,
+    5042,
+    5001
+   ],
+   "why": "visual daily schedule of a Namibian child (proposal: Namibian schedules)"
+  }
+ }
+}

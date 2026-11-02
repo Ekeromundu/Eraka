@@ -1,0 +1,53 @@
+.gradle
+.gradle-user-home
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea/misc.xml
+/.idea/gradle.xml
+/.app/app.iml
+/.app/*.iml
+.DS_Store
+/build
+*.apk
+*.iml
+.idea
+
+
+# ---- Eraka: kept out of GitHub (2 Nov 2026) ----
+# Firebase project config (each developer uses their own)
+app/google-services.json
+# Build output and test coverage
+app/build/
+app/release/
+app/jacoco.exec
+.kotlin/
+# Participant data and test logs (not consented for publication)
+eraka_base_data/raw_messages.csv
+eraka_base_data/SAMPLE_raw_messages.csv
+eraka_base_data/picture_crops/
+eraka_base_data/new_pictures/
+eraka_usage.db
+voice_eval.csv
+test_log*.txt
+full_log.txt
+crash*.txt
+demo.log
+meminfo.txt
+perf.txt
+perf_report.md
+perf_table.tex
+startup.txt
+hs_err_pid*.log
+*-debug.log
+# Backups, unused models and tool leftovers
+_backup_login_activity_2/
+_eraka_unused_models/
+Claude outputs/
+.agents/
+.gitignore_before_github_*
+# Python caches, staging copies and macOS resource files
+__pycache__/
+*.pyc
+tools/_jstage/
+._*

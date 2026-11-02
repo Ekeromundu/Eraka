@@ -1,0 +1,12 @@
+# Eraka base model: starter messages as picture IDs. Made by tools/eraka_base_import.py - do not edit by hand.
+source,time,place,picto_ids,text
+sample,MORNING,HOME,643 44 500,I want water
+sample,MORNING,HOME,643 44 118 594,I want to eat breakfast
+sample,MIDDAY,SCHOOL,643 44 118,I want to eat
+sample,,SCHOOL,643 44 34 767,I want to play with the ball
+sample,EVENING,HOME,643 44 628,I want my mum
+sample,AFTERNOON,HOME,643 44 773,I want to watch TV
+sample,,SCHOOL,643 660,I need the toilet
+sample,MORNING,HOME,14 383,Give me porridge please
+sample,EVENING,HOME,643 137 643 44,I am tired I want to sleep
+sample,,STORE,643 44 474,I want apples

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    colors_v5.xml
+    New colors for the v5 mockup design. Merge these into the project's
+    existing colors.xml (or keep as this separate file under
+    app/src/main/res/values/) - names are new and don't collide with
+    anything in the existing colors.xml checked against this pass.
+-->
+<resources>
+    <!-- Warm tan / food-tile palette from the mockup -->
+    <color name="PictoTileBg">#FAEEDA</color>
+    <color name="PictoTextDark">#412402</color>
+    <color name="PictoChipTextDark">#633806</color>
+    <color name="PictoSelectedBorder">#EF9F27</color>
+
+    <!-- Green filler-pill palette from the mockup -->
+    <color name="FillerPillBg">#EAF3DE</color>
+    <color name="FillerPillText">#27500A</color>
+
+    <!-- Neutral text tones referenced throughout -->
+    <color name="TextSecondary">#5B6169</color>
+    <color name="TextMuted">#8A8F98</color>
+
+    <!-- Muted tile background, e.g. the "more" tile before selection -->
+    <color name="TileMutedBg">#E9EBEE</color>
+</resources>

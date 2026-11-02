@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Eraka 22 Oct 2026: home words and the parent's own voice (ErakaHomeWords, ErakaHomeVoicePanel) -->
+<resources>
+    <string name="home_word_title">Word at home (optional)</string>
+    <string name="home_word_help">If your child hears another word at home, for example \"meme\" for mom, write it here. Eraka will say it instead of the English word.</string>
+    <string name="home_word_hint">e.g. meme</string>
+    <string name="home_voice_title">Your voice (optional)</string>
+    <string name="home_voice_help">Record yourself saying the word (up to 10 seconds). When your child taps the picture, Eraka plays your voice.</string>
+    <string name="home_voice_record">Record</string>
+    <string name="home_voice_record_again">Record again</string>
+    <string name="home_voice_stop">Stop</string>
+    <string name="home_voice_play">Play</string>
+    <string name="home_voice_delete">Delete</string>
+    <string name="home_voice_speak_now">Speak now, then tap Stop</string>
+    <string name="home_voice_too_short">Nothing was recorded. Tap Record and speak a little longer.</string>
+    <string name="home_voice_failed">The microphone could not be used.</string>
+    <string name="home_voice_allow_mic">Please allow the microphone, then tap Record again.</string>
+</resources>

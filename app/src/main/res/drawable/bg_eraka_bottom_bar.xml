@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main board bottom bar: soft back wave + leaf-green front wave with a few bubbles -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="72dp"
+    android:viewportWidth="360"
+    android:viewportHeight="72">
+    <path android:fillColor="@color/eraka_green_soft"
+        android:pathData="M0,72 L0,12 C60,-2 120,26 180,12 C240,-2 300,22 360,8 L360,72 Z"/>
+    <path android:fillColor="@color/eraka_green"
+        android:pathData="M0,72 L0,22 C70,8 130,34 200,20 C260,8 310,28 360,16 L360,72 Z"/>
+    <path android:fillColor="@android:color/white" android:fillAlpha="0.25"
+        android:pathData="M26,58 a4,4 0 1,0 8,0 a4,4 0 1,0 -8,0 Z"/>
+    <path android:fillColor="@android:color/white" android:fillAlpha="0.2"
+        android:pathData="M150,64 a3,3 0 1,0 6,0 a3,3 0 1,0 -6,0 Z"/>
+    <path android:fillColor="@android:color/white" android:fillAlpha="0.25"
+        android:pathData="M300,60 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0 Z"/>
+</vector>

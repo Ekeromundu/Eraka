@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Eraka 24 Oct 2026: the same tab on the right edge (left-handed layout, menu on the right) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/eraka_mustard"/>
+    <corners android:topLeftRadius="18dp" android:bottomLeftRadius="18dp"
+        android:topRightRadius="0dp" android:bottomRightRadius="0dp"/>
+</shape>

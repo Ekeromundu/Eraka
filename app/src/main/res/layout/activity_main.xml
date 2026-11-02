@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main board with side menu - Eraka cream / mustard / green style -->
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="start"
+    android:outlineSpotShadowColor="@android:color/transparent"
+    android:outlineAmbientShadowColor="@android:color/transparent">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_margin="15dp"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/bg_eraka_drawer"
+        app:elevation="8dp"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        app:itemIconTint="@color/eraka_green"
+        app:itemTextColor="@color/eraka_text_dark"
+        app:itemRippleColor="@color/eraka_mustard_light"
+        app:itemShapeFillColor="@color/nav_item_bg_eraka"
+        app:itemShapeAppearance="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+        app:itemShapeInsetStart="8dp"
+        app:itemShapeInsetEnd="8dp" />
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

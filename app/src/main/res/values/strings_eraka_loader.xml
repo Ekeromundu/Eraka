@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loader_please_wait">Just a moment…</string>
+    <string name="loader_this_can_take_a_moment">This can take a few seconds</string>
+    <string name="loader_signing_in">Signing you in…</string>
+    <string name="loader_downloading_words">Getting your words and pictures…</string>
+    <string name="loader_setting_up">Setting things up for you…</string>
+    <string name="loader_saving_answers">Saving your answers…</string>
+    <string name="loader_preparing_board">Getting your board ready…</string>
+    <string name="loader_saving_picture">Saving the picture…</string>
+    <string name="loader_saving_group">Saving the group…</string>
+    <string name="saved_new_picture">Picture saved ✓</string>
+    <string name="saved_new_group">Group saved ✓</string>
+    <string name="saved_picture_changes">Changes saved ✓</string>
+    <string name="saved_group_changes">Group changes saved ✓</string>
+    <string name="check_title">Almost there</string>
+    <string name="check_need_image">Add an image for the new picture: tap the picture box to take a photo, choose one from the phone\'s gallery, or search ARASAAC.</string>
+    <string name="check_need_image_group">Add an image for the new group: tap the picture box to take a photo, choose one from the phone\'s gallery, or search ARASAAC.</string>
+    <string name="check_need_name">Type the word for this picture in the name box.</string>
+    <string name="check_need_name_short">Type a name</string>
+    <string name="check_add_image">Add an image</string>
+    <string name="multi_menu">Select and delete</string>
+    <string name="multi_title_pictures">Remove pictures from this group</string>
+    <string name="multi_title_groups">Delete groups</string>
+    <string name="multi_hint">Tap the ones you want to remove, then tap Delete.</string>
+    <string name="multi_select_all">Select all</string>
+    <string name="multi_select_none">Select none</string>
+    <string name="multi_delete_button">Delete (%1$d)</string>
+    <string name="multi_confirm_title">Are you sure?</string>
+    <string name="multi_confirm_yes">Delete</string>
+    <string name="multi_confirm_pictures">Remove %1$d picture(s) from this group? They stay in the app and in any other group.</string>
+    <string name="multi_confirm_groups">Delete %1$d group(s)? The pictures in them stay in the app.</string>
+    <string name="multi_done_pictures">%1$d picture(s) removed ✓</string>
+    <string name="multi_done_groups">%1$d group(s) deleted ✓</string>
+    <string name="multi_nothing">There is nothing to delete here.</string>
+    <string name="loader_changing_place">Getting the pictures for %1$s…</string>
+    <string name="loader_deleting">Deleting…</string>
+    <string name="multi_search_hint">Search</string>
+    <string name="loader_something_went_wrong">Something went wrong. Please try again.</string>
+    <!-- Side-menu greeting -->
+    <string name="nav_welcome_back">Welcome back,</string>
+    <string name="nav_welcome_back_name">%1$s!</string>
+    <string name="nav_welcome_back_no_name">Welcome back!</string>
+    <string name="nav_lets_talk_today">Let\'s talk today 💬</string>
+    <!-- Avatar page: own photo -->
+    <string name="avatar_upload_photo">Upload photo</string>
+    <string name="avatar_take_photo">Take photo</string>
+    <string name="avatar_or_pick_character">…or pick a character</string>
+    <string name="avatar_photo_failed">Couldn\'t use that picture. Please try another one.</string>
+    <!-- Avatar photo crop screen -->
+    <string name="crop_title">Crop your photo</string>
+    <string name="crop_subtitle">Drag and pinch so your face fits in the circle</string>
+    <string name="crop_rotate">Rotate</string>
+    <string name="crop_use_photo">Use this photo</string>
+    <string name="crop_cancel">Cancel</string>
+    <!-- Splash -->
+    <string name="splash_loading">Getting Eraka ready…</string>
+    <string name="loader_login_slow">This is taking longer than usual. Check the internet connection, then tap Sign in to try again.</string>
+    <!-- Eraka 28 Oct 2026: pictures' skin colour on the child-profile page (no colour names, optional) -->
+    <string name="tone_question">What colour should the pictures be?</string>
+    <string name="tone_option_1">Pictures colour 1, lightest</string>
+    <string name="tone_option_2">Pictures colour 2</string>
+    <string name="tone_option_3">Pictures colour 3</string>
+    <string name="tone_option_4">Pictures colour 4</string>
+    <string name="tone_option_5">Pictures colour 5, darkest</string>
+</resources>

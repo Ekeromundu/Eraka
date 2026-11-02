@@ -1,0 +1,37 @@
+[
+{
+  "directory": "C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/.cxx/Debug/262t3y1r/arm64-v8a",
+  "command": "C:\\Users\\KEKasaona\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android24 --sysroot=C:/Users/KEKasaona/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -std=c++17 -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\whisper_jni.cpp.o -c \"C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\whisper_jni.cpp\"",
+  "file": "C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\whisper_jni.cpp"
+},
+{
+  "directory": "C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/.cxx/Debug/262t3y1r/arm64-v8a",
+  "command": "C:\\Users\\KEKasaona\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android24 --sysroot=C:/Users/KEKasaona/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -std=c++17 -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\whisper.cpp.o -c \"C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\whisper.cpp\"",
+  "file": "C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\whisper.cpp"
+},
+{
+  "directory": "C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/.cxx/Debug/262t3y1r/arm64-v8a",
+  "command": "C:\\Users\\KEKasaona\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot=C:/Users/KEKasaona/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\ggml.c.o -c \"C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml.c\"",
+  "file": "C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml.c"
+},
+{
+  "directory": "C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/.cxx/Debug/262t3y1r/arm64-v8a",
+  "command": "C:\\Users\\KEKasaona\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot=C:/Users/KEKasaona/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\ggml-alloc.c.o -c \"C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml-alloc.c\"",
+  "file": "C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml-alloc.c"
+},
+{
+  "directory": "C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/.cxx/Debug/262t3y1r/arm64-v8a",
+  "command": "C:\\Users\\KEKasaona\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android24 --sysroot=C:/Users/KEKasaona/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -std=c++17 -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\ggml-backend.cpp.o -c \"C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml-backend.cpp\"",
+  "file": "C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml-backend.cpp"
+},
+{
+  "directory": "C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/.cxx/Debug/262t3y1r/arm64-v8a",
+  "command": "C:\\Users\\KEKasaona\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot=C:/Users/KEKasaona/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\ggml-quants.c.o -c \"C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml-quants.c\"",
+  "file": "C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml-quants.c"
+},
+{
+  "directory": "C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/.cxx/Debug/262t3y1r/arm64-v8a",
+  "command": "C:\\Users\\KEKasaona\\AppData\\Local\\Android\\Sdk\\ndk\\23.1.7779620\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=aarch64-none-linux-android24 --sysroot=C:/Users/KEKasaona/AppData/Local/Android/Sdk/ndk/23.1.7779620/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dwhisper_jni_EXPORTS -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -g  -fno-limit-debug-info -fPIC -o CMakeFiles\\whisper_jni.dir\\ggml-cpu.c.o -c \"C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml-cpu.c\"",
+  "file": "C:\\Users\\KEKasaona\\Downloads\\OTTAAProject - Copy - Copy\\app\\src\\main\\cpp\\ggml-cpu.c"
+}
+]

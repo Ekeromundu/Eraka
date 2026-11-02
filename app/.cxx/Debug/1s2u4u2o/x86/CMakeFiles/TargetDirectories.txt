@@ -1,0 +1,3 @@
+C:/Users/KEKasaona/Desktop/OTTAAProject - Copy - Copy/app/.cxx/Debug/1s2u4u2o/x86/CMakeFiles/whisper_jni.dir
+C:/Users/KEKasaona/Desktop/OTTAAProject - Copy - Copy/app/.cxx/Debug/1s2u4u2o/x86/CMakeFiles/edit_cache.dir
+C:/Users/KEKasaona/Desktop/OTTAAProject - Copy - Copy/app/.cxx/Debug/1s2u4u2o/x86/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,60 @@
+# Eraka base model: starter messages as picture IDs. Made by tools/eraka_base_import.py - do not edit by hand.
+source,time,place,picto_ids,text
+parent p1 22 oct 2026 children's names removed,,,643 44 118,I want to eat
+parent p1,,,643 597,I'm hungry
+parent p1,,,643 44 5001,I want to sleep
+parent p1,,,642 5002,You hurt me
+parent p1,,,14 5003 628,Give me phone mommy
+parent p1,,,643 125,I'm sorry
+parent p1,,,643 44,I want kfc
+parent p1,,,383 385 628,Please help me mommy
+parent p1,,,383 385 632,Please help me daddy
+parent p1,,,643 85 973,I am looking for my shoes
+parent p1,,,382 628,Bye mommy
+parent p1,,,643 44 624,I want my sister
+parent p1,,,643 44 34 615,I want to play with kids
+parent p1,,,384 628,Thank you mommy
+parent p1 liked foods,,,643 44 5005,I want porridge
+parent p1 liked foods,,,643 44 5005,I want oats
+parent p1 liked foods,,,643 44 5006,I want weetbix
+parent p1 liked foods,,,643 44 480,I want spaghetti
+parent p1 liked foods,,,643 44 5007,I want meat
+parent p1 liked foods,,,643 44 504,I want chicken
+parent p1 liked foods,,,643 44 476,I want fish
+parent p1 liked foods,,,643 44 5008,I want noodles
+parent p1 liked foods,,,643 44 5009,I want a muffin
+parent p1 liked foods,,,643 44 484,I want yoghurt
+parent p1 liked foods,,,643 44 501,I want cooldrink
+parent p1 liked foods,,,643 44 473,I want a banana
+parent p2 22 oct 2026 3 messages with family names left out film title replaced,,,643 383 30 5033,May I please go to the toilet?
+parent p2,,,5014 30 662 815,Are we going to school tomorrow?
+parent p2,,,643 597,I am hungry
+parent p2,,,643 383 49 1014,May I please have food?
+parent p2,,,595 5014 30,Where are we going?
+parent p2,,,5014 383 30 5015,Can we please go shopping?
+parent p2,,,643 383 49 415,May I please have biscuits?
+parent p2,,,643 383 773,May I please watch TV?
+parent p2,,,11,Brush my teeth
+parent p2,,,10,Put on my clothes
+parent p2,,,5014 383 33 632,Can we please call daddy?
+parent p2,,,30 28 5017,Let's go and do laundry
+parent p2,,,643 383 49 5016,May I please have a haircut?
+parent p2,,,643 30 662,I am going to school
+parent p2,,,643 5022,I live in Namibia
+parent p2,,,643 383 49 5010 1014,May I please have some more food?
+parent p2,,,388 643 49 5012 118,Yes I have finished eating
+parent p2,,,388 384,Yes thank you
+researcher my day routine 24 oct 2026 order of the my day group,MORNING,HOME,5032 5033,wake up toilet
+researcher my day routine,MORNING,HOME,5033 5034,toilet bath
+researcher my day routine,MORNING,HOME,5034 5035,bath get dressed
+researcher my day routine,MORNING,HOME,5035 5036,get dressed school uniform
+researcher my day routine,MORNING,HOME,118 594,eat breakfast
+researcher my day routine,MORNING,HOME,5037,walk to school
+researcher my day routine,MIDDAY,SCHOOL,118 589,eat lunch
+researcher my day routine,AFTERNOON,HOME,28 5038,do homework
+researcher my day routine,AFTERNOON,HOME,5039,fetch water
+researcher my day routine,AFTERNOON,HOME,5040,sweep
+researcher my day routine,EVENING,HOME,118 590,eat dinner
+researcher my day routine,EVENING,HOME,5041,wash dishes
+researcher my day routine,EVENING,HOME,5042,pray
+researcher my day routine,EVENING,HOME,5042 5001,pray sleep

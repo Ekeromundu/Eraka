@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Portrait crop screen for the child's avatar photo (AvatarPictureCropper).
+  Same Eraka style as onboarding. IDs used by PictureCropper/AvatarPictureCropper:
+    cropImageView, btnTalk (confirm), back_button (cancel), buttonRotate
+  The pictogram editor keeps using activity_picture_cropper.xml.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/eraka_cream_bg">
+
+    <ImageView
+        android:id="@+id/imageBubblesCrop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_eraka_grass"
+        app:layout_constraintDimensionRatio="360:80"
+        app:layout_constraintHeight_max="110dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textCropTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="@string/crop_title"
+        android:textColor="@color/eraka_text_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textCropSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="@string/crop_subtitle"
+        android:textColor="@color/eraka_text_muted"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCropTitle"/>
+
+    <!-- Cream panel holding the cropper -->
+    <FrameLayout
+        android:id="@+id/cropPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_eraka_panel"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@id/buttonRotate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCropSubtitle">
+
+        <com.canhub.cropper.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRotate"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_eraka_button_back"
+        android:drawableStart="@drawable/ic_eraka_rotate_right"
+        android:drawablePadding="6dp"
+        android:drawableTint="@color/eraka_green_dark"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:onClick="onClick"
+        android:paddingStart="14dp"
+        android:paddingEnd="18dp"
+        android:stateListAnimator="@null"
+        android:text="@string/crop_rotate"
+        android:textAllCaps="false"
+        android:textColor="@color/eraka_green_dark"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnTalk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Cancel + confirm -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_button"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_eraka_button_back"
+        android:onClick="onClick"
+        android:stateListAnimator="@null"
+        android:text="@string/crop_cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/eraka_green_dark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnTalk"
+        app:layout_constraintEnd_toStartOf="@id/btnTalk"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnTalk"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTalk"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/bg_eraka_button_mustard"
+        android:onClick="onClick"
+        android:paddingBottom="5dp"
+        android:stateListAnimator="@null"
+        android:text="@string/crop_use_photo"
+        android:textAllCaps="false"
+        android:textColor="@color/eraka_text_on_mustard"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/imageBubblesCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1.6"
+        app:layout_constraintStart_toEndOf="@id/back_button"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

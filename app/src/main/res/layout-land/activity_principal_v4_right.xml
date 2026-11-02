@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/eraka_cream_bg"
+    tools:openDrawer="start">
+
+    <!-- ================= SMART ROW (unchanged) ================= -->
+    <na.eraka.SmartRow.SmartRowView
+        android:id="@+id/smartRowView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+    <!-- ================= CATEGORY SWITCHER (DISABLED) =================
+         Commented out for now — the 4 hardcoded groups (Food/Actions/Feelings/People)
+         aren't wired to real category filtering yet. horizontalScrollView2 below has
+         been re-anchored to smartRowView directly so the layout doesn't reference a
+         missing id. To re-enable: uncomment this block and change
+         horizontalScrollView2's app:layout_constraintTop_toBottomOf back to
+         @id/categorySwitcherScroll.
+
+    <HorizontalScrollView
+        android:id="@+id/categorySwitcherScroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smartRowView"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/small_margin">
+
+        <LinearLayout
+            android:id="@+id/categorySwitcherContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/categorySwitcherCardFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:background="@drawable/picto_shape_outline"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="Food"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/categorySwitcherCardActions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:background="@drawable/picto_shape_outline"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="Actions"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/categorySwitcherCardFeelings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:background="@drawable/picto_shape_outline"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="Feelings"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/categorySwitcherCardPeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/picto_shape_outline"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="People"
+                android:textColor="@color/White"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    -->
+
+    <!-- ================= SENTENCE STRIP (Seleccion1-10, unchanged ids/types) =================
+         Fixed height so the match_parent-height ImageButtons inside resolve correctly;
+         this is the one section that still needs a fixed dp height rather than 0dp,
+         same as it did in the landscape layout. -->
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="76dp"
+        android:id="@+id/horizontalScrollView2"
+        android:background="@drawable/bg_eraka_sentence_strip"
+        android:padding="5dp"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smartRowView"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/small_margin">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutv2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton android:id="@+id/Seleccion1" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion2" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion3" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion4" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion5" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion6" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion7" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion8" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion9" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+            <ImageButton android:id="@+id/Seleccion10" android:layout_width="64dp" android:layout_height="match_parent" android:layout_margin="@dimen/seleccion_margin" android:adjustViewBounds="true" android:background="@drawable/bg_eraka_sentence_slot" android:contentDescription="Talk" android:longClickable="true" android:padding="10dp" android:scaleType="fitXY" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- ================= ERAKA SENTENCE SUGGESTION (13 Oct 2026) =================
+         Shown under the strip when the pictures in the message fit a sentence template
+         (ErakaSentenceBuilder). The speaker button says the sentence (accepted), the x hides
+         it (ignored). Hidden (gone) when there is no suggestion, so the layout is unchanged. -->
+    <LinearLayout
+        android:id="@+id/erakaSentenceBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:background="@drawable/bg_eraka_card_white"
+        android:paddingStart="12dp"
+        android:paddingEnd="4dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView2"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/small_margin">
+
+        <TextView
+            android:id="@+id/erakaSentenceText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/erakaPrimaryDark"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <ImageButton
+            android:id="@+id/erakaSentenceSay"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Say this sentence"
+            android:src="@drawable/ic_eraka_speaker"
+            app:tint="@color/erakaPrimary" />
+
+        <ImageButton
+            android:id="@+id/erakaSentenceDismiss"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Hide this sentence"
+            android:src="@drawable/ic_cancel_black_24dp"
+            android:alpha="0.6" />
+    </LinearLayout>
+
+    <!-- ================= 4 TILES (Option1-4, still PictoView — unchanged) =================
+         This is the flexible-height section: it takes whatever vertical space is left
+         between the sentence strip and the suggested-fillers row, which is what makes
+         the whole thing portrait-friendly without needing weighted chains. -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.82"
+        app:layout_constraintTop_toBottomOf="@id/erakaSentenceBar"
+        app:layout_constraintBottom_toTopOf="@id/bottomActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/small_margin"
+        android:id="@+id/constraintPictos"
+        android:background="@drawable/bg_eraka_panel"
+        android:padding="10dp">
+
+        <na.eraka.Views.ErakaPictoView
+            android:id="@+id/Option1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/interpicto_margin"
+            android:layout_marginBottom="@dimen/interpicto_margin"
+            app:Imagen="2"
+            app:Texto="Hola"
+            android:contentDescription="Picto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/Option3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/Option2" />
+
+        <na.eraka.Views.ErakaPictoView
+            android:id="@+id/Option2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/interpicto_margin"
+            android:layout_marginBottom="@dimen/interpicto_margin"
+            app:Imagen="2"
+            app:Texto="Hola"
+            android:contentDescription="Picto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/Option4"
+            app:layout_constraintStart_toEndOf="@id/Option1"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <na.eraka.Views.ErakaPictoView
+            android:id="@+id/Option3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="@dimen/interpicto_margin"
+            android:layout_marginTop="@dimen/interpicto_margin"
+            app:Imagen="2"
+            app:Texto="Hola"
+            android:contentDescription="Picto"
+            app:layout_constraintTop_toBottomOf="@id/Option1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/Option4" />
+
+        <na.eraka.Views.ErakaPictoView
+            android:id="@+id/Option4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/interpicto_margin"
+            android:layout_marginTop="@dimen/interpicto_margin"
+            app:Imagen="2"
+            app:Texto="Hola"
+            android:contentDescription="Picto"
+            app:layout_constraintTop_toBottomOf="@id/Option2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/Option3"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            app:lottie_colorFilter="@color/eraka_mustard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:lottie_fileName="circle_loader.json" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- ================= BOTTOM ACTION BAR =================
+         Redesigned: teal arched-top bar, white FAB with teal icon for the two
+         primary actions (Speak/Voice), white-tinted icons for the rest.
+         Same six buttons/functions/types as before — findViewById() casts in
+         Principal.java are unaffected. -->
+    <LinearLayout
+        android:id="@+id/bottomActionBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_eraka_bottom_bar"
+        android:elevation="12dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="@dimen/small_margin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnTalk"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:elevation="4dp"
+                android:src="@drawable/icono_ottaa"
+                app:tint="@color/eraka_text_on_mustard"
+                app:backgroundTint="@color/eraka_mustard"
+                app:fabCustomSize="40dp"
+                app:maxImageSize="26dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Speak"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnWhisper"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:elevation="4dp"
+                android:src="@android:drawable/ic_btn_speak_now"
+                app:tint="@color/eraka_green_dark"
+                app:backgroundTint="@color/White"
+                app:fabCustomSize="40dp"
+                app:maxImageSize="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Voice"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_borrar"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:elevation="4dp"
+                android:src="@drawable/ic_backspace_black_24dp"
+                app:tint="@color/eraka_green_dark"
+                app:backgroundTint="@color/White"
+                app:fabCustomSize="40dp"
+                app:maxImageSize="24dp"
+                android:contentDescription="Delete one picto, press and hold to delete everything" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Delete"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnMasPictos"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:elevation="4dp"
+                android:src="@drawable/ic_view_day_black_24dp"
+                app:tint="@color/eraka_green_dark"
+                app:backgroundTint="@color/White"
+                app:fabCustomSize="40dp"
+                app:maxImageSize="24dp"
+                android:contentDescription="More pictograms" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="More"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <!-- constraintRightButtons id preserved here — Principal.java's initMenu()
+             does findViewById(R.id.constraintRightButtons) and stores it, so the id
+             has to exist somewhere even though the layout it names has moved. -->
+        <LinearLayout
+            android:id="@+id/constraintRightButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnTodosLosPictos"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:elevation="4dp"
+                android:src="@drawable/ic_photo_library_black_24dp"
+                app:tint="@color/eraka_green_dark"
+                app:backgroundTint="@color/White"
+                app:fabCustomSize="40dp"
+                app:maxImageSize="24dp"
+                android:contentDescription="Here you find the gallery with all the pictograms" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="All"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Invisible full-width tap target used by screen-scanning (barrido). Same
+         behavior as the original: hidden unless that accessibility mode is on. -->
+    <Button
+        android:id="@+id/btnBarrido"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/horizontalScrollView2"
+        app:layout_constraintBottom_toTopOf="@id/bottomActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Screen-scanning touch indicator (used by BarridoPantalla) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatting_button"
+        android:layout_width="@dimen/sizeFloattingButtonMed"
+        android:layout_height="@dimen/sizeFloattingButtonMed"
+        android:visibility="gone"
+        android:src="@drawable/ic_touch_app_black_24dp"
+        android:backgroundTint="@color/color_blue_transparent"
+        app:maxImageSize="@dimen/sizeFloattingButtonIconMed"
+        app:backgroundTint="@color/Black"
+        app:borderWidth="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomActionBar" />
+    <!-- Avatar bubble — unchanged, still starts hidden (gone) and shown via code. -->
+    <na.eraka.utils.MovableFloatingActionButton
+        android:layout_width="@dimen/sizeAvatarButtonIconMed"
+        android:layout_height="@dimen/sizeAvatarButtonIconMed"
+        android:id="@+id/movableButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomActionBar"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:visibility="gone"
+        android:maxHeight="@dimen/sizeAvatarButtonIconMin"
+        android:maxWidth="@dimen/sizeAvatarButtonIconMin">
+
+        <ImageView
+            android:id="@+id/buttonAvatar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_avatar35"
+            android:background="@color/colorTransparent"
+            android:contentDescription=""
+            android:maxHeight="@dimen/sizeAvatarButtonIconMin"
+            android:maxWidth="@dimen/sizeAvatarButtonIconMin"
+            android:layout_gravity="center" />
+    </na.eraka.utils.MovableFloatingActionButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

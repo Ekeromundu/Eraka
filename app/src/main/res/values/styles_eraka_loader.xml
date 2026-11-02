@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ErakaLoaderDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="ErakaSplashTheme" parent="CustomActionBarTheme">
+        <item name="android:windowBackground">@color/eraka_cream_bg</item>
+        <item name="android:statusBarColor">@color/eraka_cream_bg</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- Eraka 28 Oct 2026: the board. While Android builds it, the window shows the cream
+         background with the logo instead of black. -->
+    <style name="ErakaBoardTheme" parent="CustomActionBarTheme">
+        <item name="android:windowBackground">@drawable/bg_eraka_board_starting</item>
+    </style>
+
+    <!-- Floating rounded dialogs (caregiver lock, places picker) -->
+    <style name="ErakaDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+    <!-- Settings screen (framework PreferenceActivity, keeps its action bar) -->
+    <style name="ErakaPrefsTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:colorPrimary">@color/eraka_mustard_light</item>
+        <item name="android:colorPrimaryDark">@color/eraka_mustard_light</item>
+        <item name="android:colorAccent">@color/eraka_green</item>
+        <item name="android:colorControlNormal">@color/eraka_green_dark</item>
+        <item name="android:windowBackground">@color/eraka_cream_bg</item>
+        <item name="android:colorBackground">@color/eraka_cream_bg</item>
+        <item name="android:textColorPrimary">@color/eraka_text_dark</item>
+        <item name="android:textColorSecondary">@color/eraka_text_muted</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:listDivider">@color/eraka_field_stroke</item>
+    </style>
+    <!-- Eraka 28 Oct 2026: example tiles for the pictures' skin colour (avatar page) -->
+    <style name="ErakaToneTile">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@drawable/bg_eraka_tone_tile</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="ErakaToneImage">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:importantForAccessibility">no</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+</resources>

@@ -1,0 +1,37 @@
+# ninja log v5
+49	1854	8057436850468820	CMakeFiles/whisper_jni.dir/ggml-alloc.c.o	3e84ac419ea546d6
+71	2686	8057436858857619	CMakeFiles/whisper_jni.dir/ggml-quants.c.o	64550160657acb4b
+101	2907	8057436860655308	CMakeFiles/whisper_jni.dir/ggml-cpu.c.o	d522f66f59b3dcbc
+90	3050	8057436862638778	CMakeFiles/whisper_jni.dir/ggml-backend.cpp.o	fbf46552900f270e
+22	3066	8057436862885217	CMakeFiles/whisper_jni.dir/whisper_jni.cpp.o	527c61c97f9c8744
+0	3568	8057436868143583	CMakeFiles/whisper_jni.dir/ggml.c.o	6ab995eac36297c4
+33	8853	8057436919247080	CMakeFiles/whisper_jni.dir/whisper.cpp.o	e28aaf777a10b0c6
+8855	9603	8057436927831762	C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/build/intermediates/cxx/Debug/262t3y1r/obj/armeabi-v7a/libwhisper_jni.so	c8dc69fe6696017f
+0	55	0	clean	5912629d0769a9c6
+123	2036	8061053863394999	CMakeFiles/whisper_jni.dir/ggml-alloc.c.o	3e84ac419ea546d6
+108	2723	8061053869119663	CMakeFiles/whisper_jni.dir/ggml-quants.c.o	64550160657acb4b
+7	2897	8061053871014106	CMakeFiles/whisper_jni.dir/whisper_jni.cpp.o	527c61c97f9c8744
+142	3468	8061053877196874	CMakeFiles/whisper_jni.dir/ggml-cpu.c.o	d522f66f59b3dcbc
+92	4675	8061053889226805	CMakeFiles/whisper_jni.dir/ggml-backend.cpp.o	fbf46552900f270e
+34	7299	8061053916623941	CMakeFiles/whisper_jni.dir/ggml.c.o	6ab995eac36297c4
+74	39017	8061054230186744	CMakeFiles/whisper_jni.dir/whisper.cpp.o	e28aaf777a10b0c6
+39019	42416	8061054267624861	C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/build/intermediates/cxx/Debug/262t3y1r/obj/armeabi-v7a/libwhisper_jni.so	c8dc69fe6696017f
+0	37	0	clean	5912629d0769a9c6
+0	52	0	clean	5912629d0769a9c6
+2259	4100	8061105596081918	CMakeFiles/whisper_jni.dir/ggml-alloc.c.o	3e84ac419ea546d6
+2237	4867	8061105602612888	CMakeFiles/whisper_jni.dir/ggml-quants.c.o	64550160657acb4b
+2328	4875	8061105602612888	CMakeFiles/whisper_jni.dir/ggml-cpu.c.o	d522f66f59b3dcbc
+16	5544	8061105609723381	CMakeFiles/whisper_jni.dir/ggml.c.o	6ab995eac36297c4
+2202	6137	8061105616838261	CMakeFiles/whisper_jni.dir/whisper_jni.cpp.o	527c61c97f9c8744
+2281	6258	8061105619414460	CMakeFiles/whisper_jni.dir/ggml-backend.cpp.o	fbf46552900f270e
+1020	27559	8061105828659358	CMakeFiles/whisper_jni.dir/whisper.cpp.o	e28aaf777a10b0c6
+27560	28559	8061105841615985	C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/build/intermediates/cxx/Debug/262t3y1r/obj/armeabi-v7a/libwhisper_jni.so	c8dc69fe6696017f
+0	44	0	clean	5912629d0769a9c6
+134	2089	8061132588992003	CMakeFiles/whisper_jni.dir/ggml-alloc.c.o	3e84ac419ea546d6
+155	2733	8061132598112606	CMakeFiles/whisper_jni.dir/ggml-quants.c.o	64550160657acb4b
+185	2744	8061132598666580	CMakeFiles/whisper_jni.dir/ggml-cpu.c.o	d522f66f59b3dcbc
+74	2916	8061132600514367	CMakeFiles/whisper_jni.dir/whisper_jni.cpp.o	527c61c97f9c8744
+109	3132	8061132602568330	CMakeFiles/whisper_jni.dir/ggml-backend.cpp.o	fbf46552900f270e
+9	3323	8061132604059990	CMakeFiles/whisper_jni.dir/ggml.c.o	6ab995eac36297c4
+33	19804	8061132764095655	CMakeFiles/whisper_jni.dir/whisper.cpp.o	e28aaf777a10b0c6
+19806	21083	8061132781162686	C:/Users/KEKasaona/Downloads/OTTAAProject - Copy - Copy/app/build/intermediates/cxx/Debug/262t3y1r/obj/armeabi-v7a/libwhisper_jni.so	c8dc69fe6696017f

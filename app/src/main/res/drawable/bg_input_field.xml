@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  This is a pure vector "shape" drawable, not a bitmap/9-patch.
+  A shape drawable renders the SAME corner radius on every screen density
+  and in the Android Studio preview, which is why your EditText/Spinner
+  borders were curvy at the top of the form but looked "undefined" or
+  square further down: whatever bg_input_field.xml you currently have is
+  very likely a stretched bitmap or a 9-patch whose corners distort once
+  the view's measured size differs from the source asset — Spinners in
+  particular resize themselves based on content, so a 9-patch corner can
+  get clipped or stretched flat. Swap the old file for this one.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Focused state: a slightly bolder, colored border -->
+    <item android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/White" />
+            <corners android:radius="16dp" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/erakaPrimary" />
+            <padding
+                android:left="16dp"
+                android:top="8dp"
+                android:right="16dp"
+                android:bottom="8dp" />
+        </shape>
+    </item>
+
+    <!-- Default state -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/White" />
+            <corners android:radius="16dp" />
+            <stroke
+                android:width="1.5dp"
+                android:color="#D8D8E4" />
+            <padding
+                android:left="16dp"
+                android:top="8dp"
+                android:right="16dp"
+                android:bottom="8dp" />
+        </shape>
+    </item>
+
+</selector>

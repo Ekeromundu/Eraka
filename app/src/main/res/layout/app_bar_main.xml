@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainBoardActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CustomActionBarTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/CustomActionBarTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/activity_principal_v4" />
+
+    <!-- Eraka 24 Oct 2026: a visible tab on the edge where the menu slides out, so users
+         know there is a menu (the swipe alone was easy to miss). Tap = open the menu. -->
+    <ImageButton
+        android:id="@+id/erakaMenuTab"
+        android:layout_width="30dp"
+        android:layout_height="64dp"
+        android:layout_gravity="start|center_vertical"
+        android:background="@drawable/bg_eraka_menu_tab"
+        android:contentDescription="@string/open_menu"
+        android:elevation="6dp"
+        android:padding="4dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_eraka_menu"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

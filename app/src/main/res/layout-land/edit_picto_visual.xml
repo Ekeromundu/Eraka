@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Edit a pictogram (Edit_Picto_Visual) - Eraka style, portrait.
+  Same ids and view types the activity uses: toolbar, ElPicto, cardViewTexto, cardViewFrame,
+  cardViewChooseTAGS, TextOutloud, TextViewTextOutLoud, IconoOTTAA, btnTexto, btnFrame, btnTAG,
+  textViewBtnFrame, colour buttons (Verde, Magenta, Azul, Negro, Naranja, Amarillo),
+  tag buttons (btnTagHora, btnTagUbicacion, btnTagCalendario, btnTagEdad).
+  The three cards sit on top of each other; the activity shows one at a time.
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/eraka_cream_bg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_eraka_toolbar_green"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/White"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- The word being edited (tap it to change the picture) -->
+    <!-- layout-land (17 Oct 2026): picture + buttons on the left, editing card on the right -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideEditLand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.38" />
+
+    <na.eraka.Views.ErakaPictoView
+        android:id="@+id/ElPicto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Picto"
+        app:layout_constraintEnd_toStartOf="@id/guideEditLand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"/>
+
+    <TextView
+        android:id="@+id/textEditTapHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/edit_tap_picture"
+        android:textColor="@color/eraka_text_muted"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toStartOf="@id/guideEditLand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ElPicto"/>
+
+    <!-- What to edit: text / colour frame / tags -->
+    <LinearLayout
+        android:id="@+id/constraintRightButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@id/guideEditLand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textEditTapHint">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnTexto"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_eraka_round_button"
+                android:contentDescription="Edit Text"
+                android:padding="13dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_edit_black_24dp"
+                android:tint="@color/eraka_green_dark"/>
+
+            <TextView
+                android:id="@+id/textViewBtnTexto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/str_edit_text"
+                android:textColor="@color/eraka_text_dark"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnFrame"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_eraka_round_button"
+                android:contentDescription="Edit Fitzgerald frame"
+                android:padding="13dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_border_outer_black_24dp"
+                android:tint="@color/eraka_green_dark"/>
+
+            <TextView
+                android:id="@+id/textViewBtnFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/str_edit_frame"
+                android:textColor="@color/eraka_text_dark"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnTAG"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="@drawable/bg_eraka_round_button"
+                android:contentDescription="Edit Tag"
+                android:padding="13dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_assistant_black_24dp"
+                android:tint="@color/eraka_green_dark"/>
+
+            <TextView
+                android:id="@+id/textViewBtnTAG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/str_edit_tags"
+                android:textColor="@color/eraka_text_dark"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="4dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/editSaveBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideEditLand"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <FrameLayout
+            android:id="@+id/constraintEdicion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_eraka_panel"
+            android:padding="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/constraintEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:id="@+id/textViewTitulo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_edit_text"
+                        android:textColor="@color/eraka_green_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/TextOutloud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/TextOutloud"
+                        android:textColor="@color/eraka_text_muted"
+                        android:textSize="14sp"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/TextViewTextOutLoud"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_eraka_field"
+                            android:hint="@string/EscribaAqui"
+                            android:imeOptions="flagNoExtractUi"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:singleLine="true"
+                            android:textColor="@color/eraka_text_dark"
+                            android:textColorHint="@color/eraka_text_muted"
+                            android:textSize="16sp"/>
+
+                        <!-- Listen to the edited word -->
+                        <ImageButton
+                            android:id="@+id/IconoOTTAA"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_marginStart="10dp"
+                            android:background="@drawable/bg_eraka_button_mustard"
+                            android:contentDescription="Listen to the edited picto"
+                            android:paddingBottom="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_eraka_speaker"
+                            android:tint="@color/eraka_text_on_mustard"/>
+                    </LinearLayout>
+
+                    <!-- Eraka 22 Oct 2026: word at home and the parent's own voice (ErakaHomeVoicePanel) -->
+                    <LinearLayout
+                        android:id="@+id/homeWordSection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/home_word_title"
+                            android:textColor="@color/eraka_green_dark"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/home_word_help"
+                            android:textColor="@color/eraka_text_muted"
+                            android:textSize="14sp"/>
+
+                        <EditText
+                            android:id="@+id/editHomeWord"
+                            android:layout_width="match_parent"
+                            android:layout_height="56dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_eraka_field"
+                            android:hint="@string/home_word_hint"
+                            android:imeOptions="flagNoExtractUi"
+                            android:inputType="textCapSentences"
+                            android:paddingStart="16dp"
+                            android:paddingEnd="16dp"
+                            android:singleLine="true"
+                            android:textColor="@color/eraka_text_dark"
+                            android:textColorHint="@color/eraka_text_muted"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/home_voice_title"
+                            android:textColor="@color/eraka_green_dark"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/home_voice_help"
+                            android:textColor="@color/eraka_text_muted"
+                            android:textSize="14sp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnHomeVoiceRecord"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/bg_eraka_button_mustard"
+                                android:text="@string/home_voice_record"
+                                android:textAllCaps="false"
+                                android:textColor="@color/eraka_text_on_mustard"
+                                android:textSize="14sp"/>
+
+                            <Button
+                                android:id="@+id/btnHomeVoicePlay"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/bg_eraka_button_mustard"
+                                android:text="@string/home_voice_play"
+                                android:textAllCaps="false"
+                                android:textColor="@color/eraka_text_on_mustard"
+                                android:textSize="14sp"/>
+
+                            <Button
+                                android:id="@+id/btnHomeVoiceDelete"
+                                android:layout_width="0dp"
+                                android:layout_height="48dp"
+                                android:layout_weight="1"
+                                android:layout_marginStart="8dp"
+                                android:background="@drawable/bg_eraka_button_mustard"
+                                android:text="@string/home_voice_delete"
+                                android:textAllCaps="false"
+                                android:textColor="@color/eraka_text_on_mustard"
+                                android:textSize="14sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewFrame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:id="@+id/textViewTituloColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_fiztgerald_key"
+                        android:textColor="@color/eraka_green_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <!-- Colour wheel: the six word-type colours around the centre -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintColorCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_constraintCircle="@id/PlaceHolder"
+                            app:layout_constraintCircleAngle="0"
+                            app:layout_constraintCircleRadius="@dimen/big_fat_margin">
+
+                            <ImageButton
+                                android:id="@+id/Verde"
+                                android:layout_width="@dimen/button_radius"
+                                android:layout_height="@dimen/button_radius"
+                                android:layout_gravity="center"
+                                android:background="@color/colorTransparent"
+                                android:contentDescription="@string/str_acciones"
+                                android:src="@drawable/circulo"
+                                android:tint="@color/YellowGreen"/>
+
+                            <TextView
+                                android:id="@+id/txtViewVerde"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/str_acciones"
+                                android:textColor="@color/eraka_text_dark"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_constraintCircle="@id/PlaceHolder"
+                            app:layout_constraintCircleAngle="300"
+                            app:layout_constraintCircleRadius="@dimen/big_fat_margin">
+
+                            <ImageButton
+                                android:id="@+id/Magenta"
+                                android:layout_width="@dimen/button_radius"
+                                android:layout_height="@dimen/button_radius"
+                                android:layout_gravity="center"
+                                android:background="@color/colorTransparent"
+                                android:contentDescription="@string/str_interacciones"
+                                android:src="@drawable/circulo"
+                                android:tint="@color/Magenta"/>
+
+                            <TextView
+                                android:id="@+id/txtViewMagenta"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/str_interacciones"
+                                android:textColor="@color/eraka_text_dark"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_constraintCircle="@id/PlaceHolder"
+                            app:layout_constraintCircleAngle="120"
+                            app:layout_constraintCircleRadius="@dimen/big_fat_margin">
+
+                            <ImageButton
+                                android:id="@+id/Azul"
+                                android:layout_width="@dimen/button_radius"
+                                android:layout_height="@dimen/button_radius"
+                                android:layout_gravity="center"
+                                android:background="@color/colorTransparent"
+                                android:contentDescription="@string/str_adjetivos"
+                                android:src="@drawable/circulo"
+                                android:tint="@color/DodgerBlue"/>
+
+                            <TextView
+                                android:id="@+id/txtViewAzul"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/str_adjetivos"
+                                android:textColor="@color/eraka_text_dark"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_constraintCircle="@id/PlaceHolder"
+                            app:layout_constraintCircleAngle="180"
+                            app:layout_constraintCircleRadius="@dimen/big_fat_margin">
+
+                            <ImageButton
+                                android:id="@+id/Negro"
+                                android:layout_width="@dimen/button_radius"
+                                android:layout_height="@dimen/button_radius"
+                                android:layout_gravity="center"
+                                android:background="@color/colorTransparent"
+                                android:contentDescription="@string/str_miscelaneas"
+                                android:src="@drawable/circulo"
+                                android:tint="@color/Black"/>
+
+                            <TextView
+                                android:id="@+id/txtViewNegro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/str_miscelaneas"
+                                android:textColor="@color/eraka_text_dark"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_constraintCircle="@id/PlaceHolder"
+                            app:layout_constraintCircleAngle="240"
+                            app:layout_constraintCircleRadius="@dimen/big_fat_margin">
+
+                            <ImageButton
+                                android:id="@+id/Naranja"
+                                android:layout_width="@dimen/button_radius"
+                                android:layout_height="@dimen/button_radius"
+                                android:layout_gravity="center"
+                                android:background="@color/colorTransparent"
+                                android:contentDescription="@string/str_sustantivos"
+                                android:src="@drawable/circulo"
+                                android:tint="@color/Orange"/>
+
+                            <TextView
+                                android:id="@+id/txtViewNaranja"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/str_sustantivos"
+                                android:textColor="@color/eraka_text_dark"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical"
+                            app:layout_constraintCircle="@id/PlaceHolder"
+                            app:layout_constraintCircleAngle="60"
+                            app:layout_constraintCircleRadius="@dimen/big_fat_margin">
+
+                            <ImageButton
+                                android:id="@+id/Amarillo"
+                                android:layout_width="@dimen/button_radius"
+                                android:layout_height="@dimen/button_radius"
+                                android:layout_gravity="center"
+                                android:background="@color/colorTransparent"
+                                android:contentDescription="@string/str_personas"
+                                android:src="@drawable/circulo"
+                                android:tint="@color/Yellow"/>
+
+                            <TextView
+                                android:id="@+id/txtViewAmarillo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/str_personas"
+                                android:textColor="@color/eraka_text_dark"
+                                android:textSize="12sp"/>
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/PlaceHolder"
+                            android:layout_width="@dimen/button_radius"
+                            android:layout_height="@dimen/button_radius"
+                            android:background="@color/colorTransparent"
+                            android:contentDescription=" "
+                            android:src="@drawable/circulo_transp"
+                            android:tint="@color/eraka_mustard_light"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewChooseTAGS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/constraintEditTags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:id="@+id/textViewTituloTAG"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/str_choose_a_tag"
+                        android:textColor="@color/eraka_green_dark"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/textViewExplicacionTAG"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/str_choosing_tags_description"
+                        android:textColor="@color/eraka_text_muted"
+                        android:textSize="13sp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btnTagHora"
+                            android:layout_width="0dp"
+                            android:layout_height="72dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_eraka_place_tile"
+                            android:contentDescription="Time TAG"
+                            android:padding="16dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_timer_black_24dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnTagUbicacion"
+                            android:layout_width="0dp"
+                            android:layout_height="72dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_eraka_place_tile"
+                            android:contentDescription="Location TAG"
+                            android:padding="16dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_location_on_black_24dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnTagCalendario"
+                            android:layout_width="0dp"
+                            android:layout_height="72dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_eraka_place_tile"
+                            android:contentDescription="Calendar TAG"
+                            android:padding="16dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_wc_black_24dp"/>
+
+                        <ImageButton
+                            android:id="@+id/btnTagEdad"
+                            android:layout_width="0dp"
+                            android:layout_height="72dp"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_eraka_place_tile"
+                            android:contentDescription="Age TAG"
+                            android:padding="16dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_face_black_on_24dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+    </ScrollView>
+
+
+    <!-- Save / Cancel -->
+    <LinearLayout
+        android:id="@+id/editSaveBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancelarPicto"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_eraka_button_back"
+            android:stateListAnimator="@null"
+            android:text="@string/edit_cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/eraka_green_dark"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGuardarPicto"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.6"
+            android:background="@drawable/bg_eraka_button_mustard"
+            android:drawableStart="@drawable/ic_done_white_24dp"
+            android:drawableTint="@color/eraka_text_on_mustard"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="5dp"
+            android:stateListAnimator="@null"
+            android:text="@string/edit_save"
+            android:textAllCaps="false"
+            android:textColor="@color/eraka_text_on_mustard"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

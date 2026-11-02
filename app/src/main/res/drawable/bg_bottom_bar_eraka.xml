@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="360dp"
+    android:height="64dp"
+    android:viewportWidth="360"
+    android:viewportHeight="64">
+
+    <path
+        android:fillColor="@color/erakaPrimary"
+        android:pathData="
+            M0,20
+            C60,-4 60,44 120,20
+            C180,-4 180,44 240,20
+            C300,-4 300,44 360,20
+            L360,64
+            L0,64
+            Z"/>
+
+</vector>

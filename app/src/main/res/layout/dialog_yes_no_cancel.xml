@@ -1,0 +1,102 @@
+<!-- Eraka 28 Oct 2026: was a fixed 400 dp wide, wider than a Galaxy A13 screen (about 360-412 dp),
+     so the "please wait" and yes/no windows were cut off. Now the width of the window, which
+     DialogUtils.mostrarDialogo() sets to 92 % of the screen. -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="170dp"
+    app:cardCornerRadius="25dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        >
+
+        <TextView
+            android:id="@+id/textTitulo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/dialog_shape_text"
+            android:gravity="center"
+            android:text="Seleccione uno o varios TAGs"
+            android:textColor="@color/White"
+            android:textSize="@dimen/textSizeTitulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/text_descripcion"
+            app:layout_constraintVertical_weight="2"
+            />
+
+        <TextView
+            android:id="@+id/text_descripcion"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:autoSizeMinTextSize="15dp"
+            android:autoSizeMaxTextSize="30dp"
+            android:text="Aun no tenemos tags para esta categoria."
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/progressBar2"
+            app:layout_constraintBottom_toTopOf="@id/yes_button"
+            app:layout_constraintTop_toBottomOf="@id/textTitulo"
+
+            app:layout_constraintHorizontal_weight="3"
+
+            app:layout_constraintVertical_weight="4" />
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="3dp"
+            app:layout_constraintTop_toTopOf="@id/text_descripcion"
+            app:layout_constraintBottom_toBottomOf="@id/text_descripcion"
+            app:layout_constraintStart_toEndOf="@id/text_descripcion"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:visibility="visible"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHorizontal_weight="1"
+            ></ProgressBar>
+
+
+
+        <na.eraka.utils.CustomButton
+            android:id="@+id/unknow_Button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/yes_button"
+            app:layout_constraintBottom_toBottomOf="@id/yes_button"
+            app:layout_constraintEnd_toStartOf="@id/no_button"
+            />
+        <na.eraka.utils.CustomButton
+            android:id="@+id/no_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toEndOf="@id/unknow_Button"
+            app:layout_constraintEnd_toStartOf="@id/yes_button"
+            app:layout_constraintTop_toTopOf="@id/yes_button"
+            app:layout_constraintBottom_toBottomOf="@id/yes_button"
+
+            />
+        <na.eraka.utils.CustomButton
+            android:id="@+id/yes_button"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/no_button"
+            app:layout_constraintTop_toBottomOf="@id/text_descripcion"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_weight="2"
+            app:layout_constraintDimensionRatio="14:4"
+            android:layout_marginBottom="6dp"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
